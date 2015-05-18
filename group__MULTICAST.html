@@ -87,16 +87,16 @@ Functions</h2></td></tr>
 <tr class="separator:gaea8ab5b7eceea3aa8659f780187639a8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gae526a51916fdd54567d7b4d096d5d6ef"><td class="memItemLeft" align="right" valign="top">switch_status_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__MULTICAST.html#gae526a51916fdd54567d7b4d096d5d6ef">switch_api_multicast_tree_delete</a> (switch_handle_t mgid_handle)</td></tr>
 <tr class="separator:gae526a51916fdd54567d7b4d096d5d6ef"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gaa30f292d21e6d49eb463890e0f91d555"><td class="memItemLeft" align="right" valign="top">switch_status_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__MULTICAST.html#gaa30f292d21e6d49eb463890e0f91d555">switch_api_multicast_member_add</a> (switch_device_t device, switch_handle_t mgid_handle, switch_handle_t vlan_handle, switch_handle_t *interface_handle, uint16_t intf_handle_count)</td></tr>
-<tr class="separator:gaa30f292d21e6d49eb463890e0f91d555"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga779fa466dd92962113c9829263079f80"><td class="memItemLeft" align="right" valign="top">switch_status_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__MULTICAST.html#ga779fa466dd92962113c9829263079f80">switch_api_multicast_member_delete</a> (switch_device_t device, switch_handle_t mgid_handle, switch_handle_t vlan_handle, switch_handle_t *interface_handle, uint16_t intf_handle_count)</td></tr>
-<tr class="separator:ga779fa466dd92962113c9829263079f80"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga2bc7a0813beb4c1536c9f08d50bbb3ca"><td class="memItemLeft" align="right" valign="top">switch_status_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__MULTICAST.html#ga2bc7a0813beb4c1536c9f08d50bbb3ca">switch_api_multicast_member_add</a> (switch_device_t device, switch_handle_t mgid_handle, switch_handle_t vlan_handle, uint16_t intf_handle_count, switch_handle_t *interface_handle)</td></tr>
+<tr class="separator:ga2bc7a0813beb4c1536c9f08d50bbb3ca"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga756f426623afe0dee9bb4fe1bb6507a3"><td class="memItemLeft" align="right" valign="top">switch_status_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__MULTICAST.html#ga756f426623afe0dee9bb4fe1bb6507a3">switch_api_multicast_member_delete</a> (switch_device_t device, switch_handle_t mgid_handle, switch_handle_t vlan_handle, uint16_t intf_handle_count, switch_handle_t *interface_handle)</td></tr>
+<tr class="separator:ga756f426623afe0dee9bb4fe1bb6507a3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <p>API functions listed to create/delete multicast trees and to add/delete multicast routes MFIB</p>
 <p>The multicast API's are controlled based on the multicast protocols that propagates the route entries to MFIB. A multicast tree handle is programmed against each route in mfib. The tree is derived in the queuing block and the packet is replicated based on the members. </p>
 <h2 class="groupheader">Function Documentation</h2>
-<a class="anchor" id="gaa30f292d21e6d49eb463890e0f91d555"></a>
+<a class="anchor" id="ga2bc7a0813beb4c1536c9f08d50bbb3ca"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -121,14 +121,14 @@ Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">switch_handle_t *&#160;</td>
-          <td class="paramname"><em>interface_handle</em>, </td>
+          <td class="paramtype">uint16_t&#160;</td>
+          <td class="paramname"><em>intf_handle_count</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">uint16_t&#160;</td>
-          <td class="paramname"><em>intf_handle_count</em>&#160;</td>
+          <td class="paramtype">switch_handle_t *&#160;</td>
+          <td class="paramname"><em>interface_handle</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -143,15 +143,15 @@ Functions</h2></td></tr>
     <tr><td class="paramname">device</td><td>- device that programs the tree </td></tr>
     <tr><td class="paramname">mgid_handle</td><td>- Handle that uniquely identifies multicast tree </td></tr>
     <tr><td class="paramname">vlan_handle</td><td>- Handle that uniquely identifies a vlan. </td></tr>
-    <tr><td class="paramname">interface_handle</td><td>- List of interfaces to be added to multicast tree </td></tr>
     <tr><td class="paramname">intf_handle_count</td><td>- Count of interface members </td></tr>
+    <tr><td class="paramname">interface_handle</td><td>- List of interfaces to be added to multicast tree </td></tr>
   </table>
   </dd>
 </dl>
 
 </div>
 </div>
-<a class="anchor" id="ga779fa466dd92962113c9829263079f80"></a>
+<a class="anchor" id="ga756f426623afe0dee9bb4fe1bb6507a3"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -176,14 +176,14 @@ Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">switch_handle_t *&#160;</td>
-          <td class="paramname"><em>interface_handle</em>, </td>
+          <td class="paramtype">uint16_t&#160;</td>
+          <td class="paramname"><em>intf_handle_count</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">uint16_t&#160;</td>
-          <td class="paramname"><em>intf_handle_count</em>&#160;</td>
+          <td class="paramtype">switch_handle_t *&#160;</td>
+          <td class="paramname"><em>interface_handle</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -198,8 +198,8 @@ Functions</h2></td></tr>
     <tr><td class="paramname">device</td><td>- device that programs the tree </td></tr>
     <tr><td class="paramname">mgid_handle</td><td>- Handle that uniquely identifies multicast tree </td></tr>
     <tr><td class="paramname">vlan_handle</td><td>- Handle that uniquely identifies a vlan. </td></tr>
-    <tr><td class="paramname">interface_handle</td><td>- List of interfaces to be deleted from multicast tree </td></tr>
     <tr><td class="paramname">intf_handle_count</td><td>- Count of interface members </td></tr>
+    <tr><td class="paramname">interface_handle</td><td>- List of interfaces to be deleted from multicast tree </td></tr>
   </table>
   </dd>
 </dl>
@@ -255,7 +255,7 @@ Functions</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue May 12 2015 20:52:41 for switchapi by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sun May 17 2015 19:38:42 for switchapi by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>

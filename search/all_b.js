@@ -20,7 +20,6 @@ var searchData=
   ['mpls_5flabel',['mpls_label',['../structswitch__api__neighbor__.html#a62878014663c49fd3133b948653f44f8',1,'switch_api_neighbor_']]],
   ['mpls_5fmode',['mpls_mode',['../structswitch__mpls__encap__.html#a905e2166c747d94518b643f85535b7f3',1,'switch_mpls_encap_']]],
   ['mpls_5ftype',['mpls_type',['../structswitch__mpls__encap__.html#af371ce6ab87dd3c15b5695c0d03131a8',1,'switch_mpls_encap_']]],
-  ['mrpf_5fgroup',['mrpf_group',['../structswitch__logical__network__.html#aa4e2c77dc3299e5b97096b8ba5a95492',1,'switch_logical_network_']]],
   ['mtu',['mtu',['../structswitch__ip__encap__.html#af81a9b287abe5c5c45a662df4dc82e37',1,'switch_ip_encap_']]],
   ['multicast_20api',['Multicast API',['../group__MULTICAST.html',1,'']]]
 ];

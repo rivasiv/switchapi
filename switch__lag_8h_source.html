@@ -103,76 +103,68 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="comment">limitations under the License.</span></div>
 <div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="comment">*/</span></div>
 <div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;</div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="comment">//</span></div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="comment">//  switch_lag.h</span></div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="comment">//  switch_api</span></div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="comment">//</span></div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="comment">//  Created on 6/30/14.</span></div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="comment">//  Copyright (c) 2014 bn. All rights reserved.</span></div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="comment">//</span></div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;</div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="preprocessor">#ifndef _switch_lag_h_</span></div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define _switch_lag_h_</span></div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="preprocessor">#include &quot;switch_id.h&quot;</span></div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="preprocessor">#include &quot;switch_handle.h&quot;</span></div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;</div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="preprocessor">#ifdef __cplusplus</span></div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="preprocessor"></span><span class="keyword">extern</span> <span class="stringliteral">&quot;C&quot;</span> {</div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* __cplusplus */</span><span class="preprocessor"></span></div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="preprocessor"></span>    </div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;     <span class="comment">// begin of LAG</span></div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;</div>
-<div class="line"><a name="l00050"></a><span class="lineno"><a class="line" href="group__LAG.html#ga725a51213e81fbcf7d83552dd183dc1c">   50</a></span>&#160;<span class="keyword">typedef</span> <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> <a class="code" href="group__LAG.html#ga725a51213e81fbcf7d83552dd183dc1c">lacp_key_t</a>;</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    </div>
-<div class="line"><a name="l00053"></a><span class="lineno"><a class="line" href="group__LAG.html#ga27f33bc168b263c99fcece54e4f3c222">   53</a></span>&#160;<span class="keyword">typedef</span> <span class="keyword">enum</span> <a class="code" href="group__LAG.html#ga27f33bc168b263c99fcece54e4f3c222">switch_lag_type_</a> {</div>
-<div class="line"><a name="l00054"></a><span class="lineno"><a class="line" href="group__LAG.html#gga27f33bc168b263c99fcece54e4f3c222a8520ce309a828bd9e867b11ede67e4c0">   54</a></span>&#160;    <a class="code" href="group__LAG.html#gga27f33bc168b263c99fcece54e4f3c222a8520ce309a828bd9e867b11ede67e4c0">SWITCH_API_LAG_SIMPLE</a>,          </div>
-<div class="line"><a name="l00055"></a><span class="lineno"><a class="line" href="group__LAG.html#gga27f33bc168b263c99fcece54e4f3c222a24adf52cd43544c8fcf521b208a690ae">   55</a></span>&#160;    <a class="code" href="group__LAG.html#gga27f33bc168b263c99fcece54e4f3c222a24adf52cd43544c8fcf521b208a690ae">SWITCH_API_LAG_RESILIENT</a>        </div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;} <a class="code" href="group__LAG.html#ga6090687f6492ca949c72c5929fd58dfe">switch_lag_type_t</a>;</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    </div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;<span class="comment">// Simple LAG API</span></div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;<span class="comment"></span>switch_handle_t <a class="code" href="group__LAG.html#gaf7fe71d1e5e46ac52afd06bac825784c">switch_api_lag_create</a>(switch_device_t device);</div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    </div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;switch_status_t <a class="code" href="group__LAG.html#ga9af820f513b03653a2a87c0285470b26">switch_api_lag_delete</a>(switch_handle_t lag_handle);</div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;</div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;switch_status_t <a class="code" href="group__LAG.html#ga4721944703f2fff4664e31f2b146843e">switch_api_lag_member_add</a>(switch_device_t device, switch_handle_t lag_handle,</div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;                                  switch_direction_t side, switch_port_t port);</div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;</div>
-<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;switch_status_t <a class="code" href="group__LAG.html#ga335557c2171997bb050b62c32d66fa6a">switch_api_lag_member_delete</a>(switch_device_t device, switch_handle_t lag_handle,</div>
-<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;                                     switch_direction_t side, switch_port_t port);</div>
-<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;    </div>
-<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> <a class="code" href="group__LAG.html#ga8f9e09eaf138732eccd33c8ea472efbb">switch_lag_get_count</a>(switch_handle_t lag_handle);</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="preprocessor">#ifndef _switch_lag_h_</span></div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define _switch_lag_h_</span></div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="preprocessor">#include &quot;switch_id.h&quot;</span></div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="preprocessor">#include &quot;switch_handle.h&quot;</span></div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="preprocessor">#ifdef __cplusplus</span></div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="preprocessor"></span><span class="keyword">extern</span> <span class="stringliteral">&quot;C&quot;</span> {</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* __cplusplus */</span><span class="preprocessor"></span></div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="preprocessor"></span>    </div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;     <span class="comment">// begin of LAG</span></div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;</div>
+<div class="line"><a name="l00042"></a><span class="lineno"><a class="line" href="group__LAG.html#ga725a51213e81fbcf7d83552dd183dc1c">   42</a></span>&#160;<span class="keyword">typedef</span> <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> <a class="code" href="group__LAG.html#ga725a51213e81fbcf7d83552dd183dc1c">lacp_key_t</a>;</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    </div>
+<div class="line"><a name="l00045"></a><span class="lineno"><a class="line" href="group__LAG.html#ga27f33bc168b263c99fcece54e4f3c222">   45</a></span>&#160;<span class="keyword">typedef</span> <span class="keyword">enum</span> <a class="code" href="group__LAG.html#ga27f33bc168b263c99fcece54e4f3c222">switch_lag_type_</a> {</div>
+<div class="line"><a name="l00046"></a><span class="lineno"><a class="line" href="group__LAG.html#gga27f33bc168b263c99fcece54e4f3c222a8520ce309a828bd9e867b11ede67e4c0">   46</a></span>&#160;    <a class="code" href="group__LAG.html#gga27f33bc168b263c99fcece54e4f3c222a8520ce309a828bd9e867b11ede67e4c0">SWITCH_API_LAG_SIMPLE</a>,          </div>
+<div class="line"><a name="l00047"></a><span class="lineno"><a class="line" href="group__LAG.html#gga27f33bc168b263c99fcece54e4f3c222a24adf52cd43544c8fcf521b208a690ae">   47</a></span>&#160;    <a class="code" href="group__LAG.html#gga27f33bc168b263c99fcece54e4f3c222a24adf52cd43544c8fcf521b208a690ae">SWITCH_API_LAG_RESILIENT</a>        </div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;} <a class="code" href="group__LAG.html#ga6090687f6492ca949c72c5929fd58dfe">switch_lag_type_t</a>;</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    </div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;<span class="comment">// Simple LAG API</span></div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;<span class="comment"></span>switch_handle_t <a class="code" href="group__LAG.html#gaf7fe71d1e5e46ac52afd06bac825784c">switch_api_lag_create</a>(switch_device_t device);</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    </div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;switch_status_t <a class="code" href="group__LAG.html#ga9af820f513b03653a2a87c0285470b26">switch_api_lag_delete</a>(switch_handle_t lag_handle);</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;switch_status_t <a class="code" href="group__LAG.html#ga4721944703f2fff4664e31f2b146843e">switch_api_lag_member_add</a>(switch_device_t device, switch_handle_t lag_handle,</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;                                  switch_direction_t side, switch_port_t port);</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;switch_status_t <a class="code" href="group__LAG.html#ga335557c2171997bb050b62c32d66fa6a">switch_api_lag_member_delete</a>(switch_device_t device, switch_handle_t lag_handle,</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;                                     switch_direction_t side, switch_port_t port);</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;    </div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> <a class="code" href="group__LAG.html#ga8f9e09eaf138732eccd33c8ea472efbb">switch_lag_get_count</a>(switch_handle_t lag_handle);</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;</div>
+<div class="line"><a name="l00095"></a><span class="lineno"><a class="line" href="group__LAG.html#ga9ed343b0cd5c8838c1143ac2a41f1751">   95</a></span>&#160;<span class="keyword">typedef</span> switch_status_t (*<a class="code" href="group__LAG.html#ga9ed343b0cd5c8838c1143ac2a41f1751">switch_lag_iterator_fn</a>)(uint8_t lag_id, switch_handle_t *intf_handle, uint8_t member_count);</div>
 <div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;</div>
-<div class="line"><a name="l00103"></a><span class="lineno"><a class="line" href="group__LAG.html#ga9ed343b0cd5c8838c1143ac2a41f1751">  103</a></span>&#160;<span class="keyword">typedef</span> switch_status_t (*<a class="code" href="group__LAG.html#ga9ed343b0cd5c8838c1143ac2a41f1751">switch_lag_iterator_fn</a>)(uint8_t lag_id, switch_handle_t *intf_handle, uint8_t member_count);</div>
-<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;</div>
-<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;switch_status_t <a class="code" href="group__LAG.html#gaea133475de16760ba13de131e188555e">switch_api_lag_get</a>(<a class="code" href="group__LAG.html#ga9ed343b0cd5c8838c1143ac2a41f1751">switch_lag_iterator_fn</a> iterator_fn);</div>
-<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;</div>
-<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;switch_status_t <a class="code" href="group__LAG.html#ga853a95867809681efa613b81a04c0684">switch_api_lag_print_all</a>();</div>
-<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;     <span class="comment">// end of LAG</span></div>
-<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;    </div>
-<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;<span class="preprocessor">#ifdef __cplusplus</span></div>
-<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;<span class="preprocessor"></span>}</div>
-<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;switch_status_t <a class="code" href="group__LAG.html#gaea133475de16760ba13de131e188555e">switch_api_lag_get</a>(<a class="code" href="group__LAG.html#ga9ed343b0cd5c8838c1143ac2a41f1751">switch_lag_iterator_fn</a> iterator_fn);</div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;</div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;switch_status_t <a class="code" href="group__LAG.html#ga853a95867809681efa613b81a04c0684">switch_api_lag_print_all</a>();</div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;     <span class="comment">// end of LAG</span></div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;    </div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;<span class="preprocessor">#ifdef __cplusplus</span></div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;<span class="preprocessor"></span>}</div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;<span class="preprocessor">#endif</span></div>
 <div class="ttc" id="group__LAG_html_ga9af820f513b03653a2a87c0285470b26"><div class="ttname"><a href="group__LAG.html#ga9af820f513b03653a2a87c0285470b26">switch_api_lag_delete</a></div><div class="ttdeci">switch_status_t switch_api_lag_delete(switch_handle_t lag_handle)</div></div>
 <div class="ttc" id="group__LAG_html_ga8f9e09eaf138732eccd33c8ea472efbb"><div class="ttname"><a href="group__LAG.html#ga8f9e09eaf138732eccd33c8ea472efbb">switch_lag_get_count</a></div><div class="ttdeci">unsigned int switch_lag_get_count(switch_handle_t lag_handle)</div></div>
-<div class="ttc" id="group__LAG_html_gga27f33bc168b263c99fcece54e4f3c222a8520ce309a828bd9e867b11ede67e4c0"><div class="ttname"><a href="group__LAG.html#gga27f33bc168b263c99fcece54e4f3c222a8520ce309a828bd9e867b11ede67e4c0">SWITCH_API_LAG_SIMPLE</a></div><div class="ttdef"><b>Definition:</b> switch_lag.h:54</div></div>
+<div class="ttc" id="group__LAG_html_gga27f33bc168b263c99fcece54e4f3c222a8520ce309a828bd9e867b11ede67e4c0"><div class="ttname"><a href="group__LAG.html#gga27f33bc168b263c99fcece54e4f3c222a8520ce309a828bd9e867b11ede67e4c0">SWITCH_API_LAG_SIMPLE</a></div><div class="ttdef"><b>Definition:</b> switch_lag.h:46</div></div>
 <div class="ttc" id="group__LAG_html_ga4721944703f2fff4664e31f2b146843e"><div class="ttname"><a href="group__LAG.html#ga4721944703f2fff4664e31f2b146843e">switch_api_lag_member_add</a></div><div class="ttdeci">switch_status_t switch_api_lag_member_add(switch_device_t device, switch_handle_t lag_handle, switch_direction_t side, switch_port_t port)</div></div>
 <div class="ttc" id="group__LAG_html_ga853a95867809681efa613b81a04c0684"><div class="ttname"><a href="group__LAG.html#ga853a95867809681efa613b81a04c0684">switch_api_lag_print_all</a></div><div class="ttdeci">switch_status_t switch_api_lag_print_all()</div></div>
-<div class="ttc" id="group__LAG_html_ga9ed343b0cd5c8838c1143ac2a41f1751"><div class="ttname"><a href="group__LAG.html#ga9ed343b0cd5c8838c1143ac2a41f1751">switch_lag_iterator_fn</a></div><div class="ttdeci">switch_status_t(* switch_lag_iterator_fn)(uint8_t lag_id, switch_handle_t *intf_handle, uint8_t member_count)</div><div class="ttdef"><b>Definition:</b> switch_lag.h:103</div></div>
-<div class="ttc" id="group__LAG_html_ga27f33bc168b263c99fcece54e4f3c222"><div class="ttname"><a href="group__LAG.html#ga27f33bc168b263c99fcece54e4f3c222">switch_lag_type_</a></div><div class="ttdeci">switch_lag_type_</div><div class="ttdef"><b>Definition:</b> switch_lag.h:53</div></div>
-<div class="ttc" id="group__LAG_html_ga725a51213e81fbcf7d83552dd183dc1c"><div class="ttname"><a href="group__LAG.html#ga725a51213e81fbcf7d83552dd183dc1c">lacp_key_t</a></div><div class="ttdeci">unsigned int lacp_key_t</div><div class="ttdef"><b>Definition:</b> switch_lag.h:50</div></div>
+<div class="ttc" id="group__LAG_html_ga9ed343b0cd5c8838c1143ac2a41f1751"><div class="ttname"><a href="group__LAG.html#ga9ed343b0cd5c8838c1143ac2a41f1751">switch_lag_iterator_fn</a></div><div class="ttdeci">switch_status_t(* switch_lag_iterator_fn)(uint8_t lag_id, switch_handle_t *intf_handle, uint8_t member_count)</div><div class="ttdef"><b>Definition:</b> switch_lag.h:95</div></div>
+<div class="ttc" id="group__LAG_html_ga27f33bc168b263c99fcece54e4f3c222"><div class="ttname"><a href="group__LAG.html#ga27f33bc168b263c99fcece54e4f3c222">switch_lag_type_</a></div><div class="ttdeci">switch_lag_type_</div><div class="ttdef"><b>Definition:</b> switch_lag.h:45</div></div>
+<div class="ttc" id="group__LAG_html_ga725a51213e81fbcf7d83552dd183dc1c"><div class="ttname"><a href="group__LAG.html#ga725a51213e81fbcf7d83552dd183dc1c">lacp_key_t</a></div><div class="ttdeci">unsigned int lacp_key_t</div><div class="ttdef"><b>Definition:</b> switch_lag.h:42</div></div>
 <div class="ttc" id="group__LAG_html_gaf7fe71d1e5e46ac52afd06bac825784c"><div class="ttname"><a href="group__LAG.html#gaf7fe71d1e5e46ac52afd06bac825784c">switch_api_lag_create</a></div><div class="ttdeci">switch_handle_t switch_api_lag_create(switch_device_t device)</div></div>
 <div class="ttc" id="group__LAG_html_ga6090687f6492ca949c72c5929fd58dfe"><div class="ttname"><a href="group__LAG.html#ga6090687f6492ca949c72c5929fd58dfe">switch_lag_type_t</a></div><div class="ttdeci">enum switch_lag_type_ switch_lag_type_t</div></div>
-<div class="ttc" id="group__LAG_html_gga27f33bc168b263c99fcece54e4f3c222a24adf52cd43544c8fcf521b208a690ae"><div class="ttname"><a href="group__LAG.html#gga27f33bc168b263c99fcece54e4f3c222a24adf52cd43544c8fcf521b208a690ae">SWITCH_API_LAG_RESILIENT</a></div><div class="ttdef"><b>Definition:</b> switch_lag.h:55</div></div>
+<div class="ttc" id="group__LAG_html_gga27f33bc168b263c99fcece54e4f3c222a24adf52cd43544c8fcf521b208a690ae"><div class="ttname"><a href="group__LAG.html#gga27f33bc168b263c99fcece54e4f3c222a24adf52cd43544c8fcf521b208a690ae">SWITCH_API_LAG_RESILIENT</a></div><div class="ttdef"><b>Definition:</b> switch_lag.h:47</div></div>
 <div class="ttc" id="group__LAG_html_ga335557c2171997bb050b62c32d66fa6a"><div class="ttname"><a href="group__LAG.html#ga335557c2171997bb050b62c32d66fa6a">switch_api_lag_member_delete</a></div><div class="ttdeci">switch_status_t switch_api_lag_member_delete(switch_device_t device, switch_handle_t lag_handle, switch_direction_t side, switch_port_t port)</div></div>
 <div class="ttc" id="group__LAG_html_gaea133475de16760ba13de131e188555e"><div class="ttname"><a href="group__LAG.html#gaea133475de16760ba13de131e188555e">switch_api_lag_get</a></div><div class="ttdeci">switch_status_t switch_api_lag_get(switch_lag_iterator_fn iterator_fn)</div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue May 12 2015 20:52:40 for switchapi by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Sun May 17 2015 19:38:42 for switchapi by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>
