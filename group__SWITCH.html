@@ -87,7 +87,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Classes</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structswitch__api__info__.html">switch_api_info_</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structswitch__api__capability__.html">switch_api_capability_</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
@@ -96,6 +96,8 @@ Macros</h2></td></tr>
 <tr class="separator:ga164f1213564ed1f3f26311694958688c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga8c542e84695706216eb3d18004eb2776"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SWITCH.html#ga8c542e84695706216eb3d18004eb2776">SWITCH_API_DEFAULT_VRF</a>&#160;&#160;&#160;1</td></tr>
 <tr class="separator:ga8c542e84695706216eb3d18004eb2776"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga26ea48c7346ec3091f0ed59890172dff"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SWITCH.html#ga26ea48c7346ec3091f0ed59890172dff">SWITCH_API_MAX_DEFAULT_PORTS</a>&#160;&#160;&#160;256</td></tr>
+<tr class="separator:ga26ea48c7346ec3091f0ed59890172dff"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
 Typedefs</h2></td></tr>
@@ -109,8 +111,9 @@ Typedefs</h2></td></tr>
 <tr class="memitem:ga29ceeb9f0a14c19fa797d7ae649c5af6"><td class="memItemLeft" align="right" valign="top">typedef enum <br class="typebreak"/>
 <a class="el" href="group__SWITCH.html#gade931171d2a2cd19577fe471bfbfa969">switch_capability_attr_</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SWITCH.html#ga29ceeb9f0a14c19fa797d7ae649c5af6">switch_capability_attr_t</a></td></tr>
 <tr class="separator:ga29ceeb9f0a14c19fa797d7ae649c5af6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga11c4fd38f0694dd284d4d09ddc7dd90d"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="structswitch__api__info__.html">switch_api_info_</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SWITCH.html#ga11c4fd38f0694dd284d4d09ddc7dd90d">switch_api_info_t</a></td></tr>
-<tr class="separator:ga11c4fd38f0694dd284d4d09ddc7dd90d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga6127dfd9796d428f8760bce0e4720125"><td class="memItemLeft" align="right" valign="top">typedef struct <br class="typebreak"/>
+<a class="el" href="structswitch__api__capability__.html">switch_api_capability_</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SWITCH.html#ga6127dfd9796d428f8760bce0e4720125">switch_api_capability_t</a></td></tr>
+<tr class="separator:ga6127dfd9796d428f8760bce0e4720125"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="enum-members"></a>
 Enumerations</h2></td></tr>
@@ -138,38 +141,37 @@ Enumerations</h2></td></tr>
 <tr class="separator:gab470d3232936d8970793e600d09b986e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gade931171d2a2cd19577fe471bfbfa969"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SWITCH.html#gade931171d2a2cd19577fe471bfbfa969">switch_capability_attr_</a> { <br/>
 &#160;&#160;<b>SWITCH_ATTR_PORT_NUMBER</b>, 
+<b>SWITCH_ATTR_PORT_LIST</b>, 
 <b>SWITCH_ATTR_MAX_VRF</b>, 
 <b>SWITCH_ATTR_ON_LINK_ROUTE_SUPPORTED</b>, 
-<b>SWITCH_ATTR_OPER_STATUS</b>, 
 <br/>
-&#160;&#160;<b>SWITCH_ATTR_HW_SEQUENCE_ID</b>, 
+&#160;&#160;<b>SWITCH_ATTR_OPER_STATUS</b>, 
+<b>SWITCH_ATTR_HW_SEQUENCE_ID</b>, 
 <b>SWITCH_ATTR_ADMIN_STATE</b>, 
 <b>SWITCH_ATTR_BCAST_CPU_FLOOD_ENABLE</b>, 
-<b>SWITCH_ATTR_MCAST_CPU_FLOOD_ENABLE</b>, 
 <br/>
-&#160;&#160;<b>SWITCH_ATTR_DEFAULT_VLAN_ID</b>, 
+&#160;&#160;<b>SWITCH_ATTR_MCAST_CPU_FLOOD_ENABLE</b>, 
+<b>SWITCH_ATTR_DEFAULT_VLAN_ID</b>, 
 <b>SWITCH_ATTR_MAX_LEARNED_ADDRESSES</b>, 
 <b>SWITCH_ATTR_FDB_UNICAST_MISS_ACTION</b>, 
-<b>SWITCH_ATTR_FDB_MULTICAST_MISS_ACTION</b>, 
 <br/>
-&#160;&#160;<b>SWITCH_ATTR_FDB_BROADCAST_MISS_ACTION</b>, 
+&#160;&#160;<b>SWITCH_ATTR_FDB_MULTICAST_MISS_ACTION</b>, 
+<b>SWITCH_ATTR_FDB_BROADCAST_MISS_ACTION</b>, 
 <b>SWITCH_ATTR_ECMP_HASH_TYPE</b>, 
 <b>SWITCH_ATTR_ECMP_HASH_FIELDS</b>, 
-<b>SWITCH_ATTR_CUSTOM_RANGE_BASE</b> = 0x10000000, 
 <br/>
-&#160;&#160;<b>SWITCH_ATTR_DEFAULT_VRF_ID</b>
+&#160;&#160;<b>SWITCH_ATTR_CUSTOM_RANGE_BASE</b> = 0x10000000, 
+<b>SWITCH_ATTR_DEFAULT_VRF_ID</b>
 <br/>
  }</td></tr>
 <tr class="separator:gade931171d2a2cd19577fe471bfbfa969"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:gae35520d3684df07f08e017a4d052fd95"><td class="memItemLeft" align="right" valign="top">switch_status_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SWITCH.html#gae35520d3684df07f08e017a4d052fd95">switch_api_capability_attribute_set</a> (<a class="el" href="group__SWITCH.html#ga29ceeb9f0a14c19fa797d7ae649c5af6">switch_capability_attr_t</a> attr_type, uint64_t value)</td></tr>
-<tr class="separator:gae35520d3684df07f08e017a4d052fd95"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga38483797a08b8a5b4899589b8bece301"><td class="memItemLeft" align="right" valign="top">switch_status_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SWITCH.html#ga38483797a08b8a5b4899589b8bece301">switch_api_capability_attribute_get</a> (<a class="el" href="group__SWITCH.html#ga29ceeb9f0a14c19fa797d7ae649c5af6">switch_capability_attr_t</a> attr_type, uint64_t *value)</td></tr>
-<tr class="separator:ga38483797a08b8a5b4899589b8bece301"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gaea2645527833f35c6a33b54156506168"><td class="memItemLeft" align="right" valign="top">switch_status_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SWITCH.html#gaea2645527833f35c6a33b54156506168">switch_api_capability_capabilities_get</a> (<a class="el" href="group__SWITCH.html#ga11c4fd38f0694dd284d4d09ddc7dd90d">switch_api_info_t</a> *switch_info)</td></tr>
-<tr class="separator:gaea2645527833f35c6a33b54156506168"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga6eef9ac16568e1d025453d7abd1d5115"><td class="memItemLeft" align="right" valign="top">switch_status_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SWITCH.html#ga6eef9ac16568e1d025453d7abd1d5115">switch_api_capability_set</a> (switch_device_t device, <a class="el" href="group__SWITCH.html#ga6127dfd9796d428f8760bce0e4720125">switch_api_capability_t</a> *api_capability)</td></tr>
+<tr class="separator:ga6eef9ac16568e1d025453d7abd1d5115"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaae3e1109c700d2d79a85c715e4f60f14"><td class="memItemLeft" align="right" valign="top">switch_status_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__SWITCH.html#gaae3e1109c700d2d79a85c715e4f60f14">switch_api_capability_get</a> (switch_device_t device, <a class="el" href="group__SWITCH.html#ga6127dfd9796d428f8760bce0e4720125">switch_api_capability_t</a> *api_capability)</td></tr>
+<tr class="separator:gaae3e1109c700d2d79a85c715e4f60f14"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <h2 class="groupheader">Macro Definition Documentation</h2>
@@ -199,13 +201,26 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<h2 class="groupheader">Typedef Documentation</h2>
-<a class="anchor" id="ga11c4fd38f0694dd284d4d09ddc7dd90d"></a>
+<a class="anchor" id="ga26ea48c7346ec3091f0ed59890172dff"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">typedef struct <a class="el" href="structswitch__api__info__.html">switch_api_info_</a>  <a class="el" href="group__SWITCH.html#ga11c4fd38f0694dd284d4d09ddc7dd90d">switch_api_info_t</a></td>
+          <td class="memname">#define SWITCH_API_MAX_DEFAULT_PORTS&#160;&#160;&#160;256</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>system default ports </p>
+
+</div>
+</div>
+<h2 class="groupheader">Typedef Documentation</h2>
+<a class="anchor" id="ga6127dfd9796d428f8760bce0e4720125"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef struct <a class="el" href="structswitch__api__capability__.html">switch_api_capability_</a>  <a class="el" href="group__SWITCH.html#ga6127dfd9796d428f8760bce0e4720125">switch_api_capability_t</a></td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -319,21 +334,21 @@ Functions</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Function Documentation</h2>
-<a class="anchor" id="ga38483797a08b8a5b4899589b8bece301"></a>
+<a class="anchor" id="gaae3e1109c700d2d79a85c715e4f60f14"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">switch_status_t switch_api_capability_attribute_get </td>
+          <td class="memname">switch_status_t switch_api_capability_get </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="group__SWITCH.html#ga29ceeb9f0a14c19fa797d7ae649c5af6">switch_capability_attr_t</a>&#160;</td>
-          <td class="paramname"><em>attr_type</em>, </td>
+          <td class="paramtype">switch_device_t&#160;</td>
+          <td class="paramname"><em>device</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">uint64_t *&#160;</td>
-          <td class="paramname"><em>value</em>&#160;</td>
+          <td class="paramtype"><a class="el" href="group__SWITCH.html#ga6127dfd9796d428f8760bce0e4720125">switch_api_capability_t</a> *&#160;</td>
+          <td class="paramname"><em>api_capability</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -342,32 +357,32 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Get switch attribute </p>
+<p>Returns all switch capability attributes </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">attr_type</td><td>- attribute type </td></tr>
-    <tr><td class="paramname">value</td><td>- value of the attribute </td></tr>
+    <tr><td class="paramname">device</td><td>device </td></tr>
+    <tr><td class="paramname">api_capability</td><td>switch capability attributes </td></tr>
   </table>
   </dd>
 </dl>
 
 </div>
 </div>
-<a class="anchor" id="gae35520d3684df07f08e017a4d052fd95"></a>
+<a class="anchor" id="ga6eef9ac16568e1d025453d7abd1d5115"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">switch_status_t switch_api_capability_attribute_set </td>
+          <td class="memname">switch_status_t switch_api_capability_set </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="group__SWITCH.html#ga29ceeb9f0a14c19fa797d7ae649c5af6">switch_capability_attr_t</a>&#160;</td>
-          <td class="paramname"><em>attr_type</em>, </td>
+          <td class="paramtype">switch_device_t&#160;</td>
+          <td class="paramname"><em>device</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">uint64_t&#160;</td>
-          <td class="paramname"><em>value</em>&#160;</td>
+          <td class="paramtype"><a class="el" href="group__SWITCH.html#ga6127dfd9796d428f8760bce0e4720125">switch_api_capability_t</a> *&#160;</td>
+          <td class="paramname"><em>api_capability</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -376,34 +391,11 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Set switch attribute </p>
+<p>Sets switch capability attributes </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">attr_type</td><td>- attribute type </td></tr>
-    <tr><td class="paramname">value</td><td>- value of the attribute </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
-<a class="anchor" id="gaea2645527833f35c6a33b54156506168"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">switch_status_t switch_api_capability_capabilities_get </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="group__SWITCH.html#ga11c4fd38f0694dd284d4d09ddc7dd90d">switch_api_info_t</a> *&#160;</td>
-          <td class="paramname"><em>switch_info</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Returns switch capabilities - TBD </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">switch_info</td><td>struct to hold switch capabilities </td></tr>
+    <tr><td class="paramname">device</td><td>device </td></tr>
+    <tr><td class="paramname">api_capability</td><td>switch capability attributes </td></tr>
   </table>
   </dd>
 </dl>
@@ -413,7 +405,7 @@ Functions</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue May 12 2015 20:52:41 for switchapi by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Jul 14 2015 15:44:35 for switchapi by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>

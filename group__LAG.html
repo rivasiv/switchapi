@@ -103,8 +103,8 @@ Enumerations</h2></td></tr>
 Functions</h2></td></tr>
 <tr class="memitem:gaf7fe71d1e5e46ac52afd06bac825784c"><td class="memItemLeft" align="right" valign="top">switch_handle_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__LAG.html#gaf7fe71d1e5e46ac52afd06bac825784c">switch_api_lag_create</a> (switch_device_t device)</td></tr>
 <tr class="separator:gaf7fe71d1e5e46ac52afd06bac825784c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga9af820f513b03653a2a87c0285470b26"><td class="memItemLeft" align="right" valign="top">switch_status_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__LAG.html#ga9af820f513b03653a2a87c0285470b26">switch_api_lag_delete</a> (switch_handle_t lag_handle)</td></tr>
-<tr class="separator:ga9af820f513b03653a2a87c0285470b26"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga371ca16cc8dddfa20974036ba5db8dc3"><td class="memItemLeft" align="right" valign="top">switch_status_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__LAG.html#ga371ca16cc8dddfa20974036ba5db8dc3">switch_api_lag_delete</a> (switch_device_t device, switch_handle_t lag_handle)</td></tr>
+<tr class="separator:ga371ca16cc8dddfa20974036ba5db8dc3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga4721944703f2fff4664e31f2b146843e"><td class="memItemLeft" align="right" valign="top">switch_status_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__LAG.html#ga4721944703f2fff4664e31f2b146843e">switch_api_lag_member_add</a> (switch_device_t device, switch_handle_t lag_handle, switch_direction_t side, switch_port_t port)</td></tr>
 <tr class="separator:ga4721944703f2fff4664e31f2b146843e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga335557c2171997bb050b62c32d66fa6a"><td class="memItemLeft" align="right" valign="top">switch_status_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__LAG.html#ga335557c2171997bb050b62c32d66fa6a">switch_api_lag_member_delete</a> (switch_device_t device, switch_handle_t lag_handle, switch_direction_t side, switch_port_t port)</td></tr>
@@ -212,22 +212,33 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="ga9af820f513b03653a2a87c0285470b26"></a>
+<a class="anchor" id="ga371ca16cc8dddfa20974036ba5db8dc3"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
           <td class="memname">switch_status_t switch_api_lag_delete </td>
           <td>(</td>
-          <td class="paramtype">switch_handle_t&#160;</td>
-          <td class="paramname"><em>lag_handle</em></td><td>)</td>
+          <td class="paramtype">switch_device_t&#160;</td>
+          <td class="paramname"><em>device</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype">switch_handle_t&#160;</td>
+          <td class="paramname"><em>lag_handle</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 <p>Link Aggregation Group deletion </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
+    <tr><td class="paramname">device</td><td>device to use </td></tr>
     <tr><td class="paramname">lag_handle</td><td>handle of group returned on creation </td></tr>
   </table>
   </dd>
@@ -396,7 +407,7 @@ Functions</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue May 12 2015 20:52:41 for switchapi by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Jul 14 2015 15:44:35 for switchapi by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>

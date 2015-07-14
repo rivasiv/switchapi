@@ -83,10 +83,10 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:gab4316cba5426cbde0812537ded5082d0"><td class="memItemLeft" align="right" valign="top">switch_handle_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__RMAC.html#gab4316cba5426cbde0812537ded5082d0">switch_api_router_mac_group_create</a> ()</td></tr>
-<tr class="separator:gab4316cba5426cbde0812537ded5082d0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga998b06b8b4fbbd0a6fb7afd04c75557c"><td class="memItemLeft" align="right" valign="top">switch_status_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__RMAC.html#ga998b06b8b4fbbd0a6fb7afd04c75557c">switch_api_router_mac_group_delete</a> (switch_handle_t rmac_handle)</td></tr>
-<tr class="separator:ga998b06b8b4fbbd0a6fb7afd04c75557c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga441726222e3874812a9e436128425d0b"><td class="memItemLeft" align="right" valign="top">switch_handle_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__RMAC.html#ga441726222e3874812a9e436128425d0b">switch_api_router_mac_group_create</a> (switch_device_t device)</td></tr>
+<tr class="separator:ga441726222e3874812a9e436128425d0b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga1fe932581efe2e6d23eae62948c7af73"><td class="memItemLeft" align="right" valign="top">switch_status_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__RMAC.html#ga1fe932581efe2e6d23eae62948c7af73">switch_api_router_mac_group_delete</a> (switch_device_t device, switch_handle_t rmac_handle)</td></tr>
+<tr class="separator:ga1fe932581efe2e6d23eae62948c7af73"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gaf7075557751cd1bbd2207b64f9e9cdc6"><td class="memItemLeft" align="right" valign="top">switch_status_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__RMAC.html#gaf7075557751cd1bbd2207b64f9e9cdc6">switch_api_router_mac_add</a> (switch_device_t device, switch_handle_t rmac_handle, <a class="el" href="structswitch__mac__addr.html">switch_mac_addr_t</a> *mac)</td></tr>
 <tr class="separator:gaf7075557751cd1bbd2207b64f9e9cdc6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga26a5d3b6f7ac4e58caa66f5f26d6f659"><td class="memItemLeft" align="right" valign="top">switch_status_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__RMAC.html#ga26a5d3b6f7ac4e58caa66f5f26d6f659">switch_api_router_mac_delete</a> (switch_device_t device, switch_handle_t rmac_handle, <a class="el" href="structswitch__mac__addr.html">switch_mac_addr_t</a> *mac)</td></tr>
@@ -201,7 +201,7 @@ Functions</h2></td></tr>
 <p>Add a mac to router mac group </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">device-</td><td>Device to be programmed </td></tr>
+    <tr><td class="paramname">device</td><td>Device to be programmed </td></tr>
     <tr><td class="paramname">rmac_handle</td><td>- ID of the RMAC group </td></tr>
     <tr><td class="paramname">mac</td><td>- Router mac address to be added to the group </td></tr>
   </table>
@@ -251,38 +251,56 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="gab4316cba5426cbde0812537ded5082d0"></a>
+<a class="anchor" id="ga441726222e3874812a9e436128425d0b"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
           <td class="memname">switch_handle_t switch_api_router_mac_group_create </td>
           <td>(</td>
-          <td class="paramname"></td><td>)</td>
+          <td class="paramtype">switch_device_t&#160;</td>
+          <td class="paramname"><em>device</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 <p>Create a router mac group Returns rmac id which will be used to identify the group uniquely. 0 is invalid. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">device</td><td>Device to be programmed </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
-<a class="anchor" id="ga998b06b8b4fbbd0a6fb7afd04c75557c"></a>
+<a class="anchor" id="ga1fe932581efe2e6d23eae62948c7af73"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
           <td class="memname">switch_status_t switch_api_router_mac_group_delete </td>
           <td>(</td>
-          <td class="paramtype">switch_handle_t&#160;</td>
-          <td class="paramname"><em>rmac_handle</em></td><td>)</td>
+          <td class="paramtype">switch_device_t&#160;</td>
+          <td class="paramname"><em>device</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype">switch_handle_t&#160;</td>
+          <td class="paramname"><em>rmac_handle</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 <p>Delete a router mac group Returns success/failure based on the group ID. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
+    <tr><td class="paramname">device</td><td>Device to be programmed </td></tr>
     <tr><td class="paramname">rmac_handle</td><td>- Rmac group to be deleted. </td></tr>
   </table>
   </dd>
@@ -310,7 +328,7 @@ Functions</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue May 12 2015 20:52:41 for switchapi by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Jul 14 2015 15:44:35 for switchapi by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>

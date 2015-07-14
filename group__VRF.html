@@ -91,8 +91,6 @@ Classes</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
 Typedefs</h2></td></tr>
-<tr class="memitem:gafb77d3fd69f043e4967f52c15d7e8d47"><td class="memItemLeft" align="right" valign="top">typedef unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__VRF.html#gafb77d3fd69f043e4967f52c15d7e8d47">switch_vrf_id_t</a></td></tr>
-<tr class="separator:gafb77d3fd69f043e4967f52c15d7e8d47"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga9720da85f334461b8c065083559b0316"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="structswitch__vrf__info__.html">switch_vrf_info_</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__VRF.html#ga9720da85f334461b8c065083559b0316">switch_vrf_info_t</a></td></tr>
 <tr class="separator:ga9720da85f334461b8c065083559b0316"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gac9e3b3aeeff3379e2976dddd2ca5e7e3"><td class="memItemLeft" align="right" valign="top">typedef enum <a class="el" href="group__VRF.html#ga468b8263e886b055a6a316c6b5f6d00c">switch_vrf_type_</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__VRF.html#gac9e3b3aeeff3379e2976dddd2ca5e7e3">switch_vrf_type_t</a></td></tr>
@@ -112,10 +110,10 @@ Enumerations</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:gac31275df6815ff9a8d052a0f352d8bcd"><td class="memItemLeft" align="right" valign="top">switch_handle_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__VRF.html#gac31275df6815ff9a8d052a0f352d8bcd">switch_api_vrf_create</a> (switch_device_t device, <a class="el" href="group__VRF.html#gafb77d3fd69f043e4967f52c15d7e8d47">switch_vrf_id_t</a> vrf_id)</td></tr>
+<tr class="memitem:gac31275df6815ff9a8d052a0f352d8bcd"><td class="memItemLeft" align="right" valign="top">switch_handle_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__VRF.html#gac31275df6815ff9a8d052a0f352d8bcd">switch_api_vrf_create</a> (switch_device_t device, switch_vrf_id_t vrf_id)</td></tr>
 <tr class="separator:gac31275df6815ff9a8d052a0f352d8bcd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga355aa3bc89aed01a13477a5c62bef701"><td class="memItemLeft" align="right" valign="top">switch_status_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__VRF.html#ga355aa3bc89aed01a13477a5c62bef701">switch_api_vrf_delete</a> (switch_handle_t vrf_handle)</td></tr>
-<tr class="separator:ga355aa3bc89aed01a13477a5c62bef701"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga26a9f34847cb148aeaab07e639602a73"><td class="memItemLeft" align="right" valign="top">switch_status_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__VRF.html#ga26a9f34847cb148aeaab07e639602a73">switch_api_vrf_delete</a> (switch_device_t device, switch_handle_t vrf_handle)</td></tr>
+<tr class="separator:ga26a9f34847cb148aeaab07e639602a73"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga68b55e91b9af5966955eee84295a9a58"><td class="memItemLeft" align="right" valign="top">switch_status_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__VRF.html#ga68b55e91b9af5966955eee84295a9a58">switch_api_vrf_attribute_set</a> (switch_handle_t vrf_handle, <a class="el" href="group__VRF.html#ga992761c1062907bb558c1b39070df7dd">switch_vrf_attr_t</a> attr_type, uint64_t value)</td></tr>
 <tr class="separator:ga68b55e91b9af5966955eee84295a9a58"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga9f88bd920506e240e40f09909cb436cc"><td class="memItemLeft" align="right" valign="top">switch_status_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__VRF.html#ga9f88bd920506e240e40f09909cb436cc">switch_api_vrf_attribute_get</a> (switch_handle_t vrf_handle, <a class="el" href="group__VRF.html#ga992761c1062907bb558c1b39070df7dd">switch_vrf_attr_t</a> attr_type, uint64_t *value)</td></tr>
@@ -138,19 +136,6 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <p>Vrf attributes </p>
-
-</div>
-</div>
-<a class="anchor" id="gafb77d3fd69f043e4967f52c15d7e8d47"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">typedef unsigned int <a class="el" href="group__VRF.html#gafb77d3fd69f043e4967f52c15d7e8d47">switch_vrf_id_t</a></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Virtual Routing Instance identifier </p>
 
 </div>
 </div>
@@ -316,7 +301,7 @@ Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="group__VRF.html#gafb77d3fd69f043e4967f52c15d7e8d47">switch_vrf_id_t</a>&#160;</td>
+          <td class="paramtype">switch_vrf_id_t&#160;</td>
           <td class="paramname"><em>vrf_id</em>&#160;</td>
         </tr>
         <tr>
@@ -337,22 +322,33 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="ga355aa3bc89aed01a13477a5c62bef701"></a>
+<a class="anchor" id="ga26a9f34847cb148aeaab07e639602a73"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
           <td class="memname">switch_status_t switch_api_vrf_delete </td>
           <td>(</td>
-          <td class="paramtype">switch_handle_t&#160;</td>
-          <td class="paramname"><em>vrf_handle</em></td><td>)</td>
+          <td class="paramtype">switch_device_t&#160;</td>
+          <td class="paramname"><em>device</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype">switch_handle_t&#160;</td>
+          <td class="paramname"><em>vrf_handle</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 <p>Delete a VRF </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
+    <tr><td class="paramname">device</td><td>- device that programs the VRF </td></tr>
     <tr><td class="paramname">vrf_handle</td><td>Vrf handle </td></tr>
   </table>
   </dd>
@@ -431,7 +427,7 @@ Functions</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue May 12 2015 20:52:41 for switchapi by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Jul 14 2015 15:44:35 for switchapi by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>

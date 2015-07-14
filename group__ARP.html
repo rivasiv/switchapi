@@ -93,32 +93,33 @@ Classes</h2></td></tr>
 Typedefs</h2></td></tr>
 <tr class="memitem:ga69538e64ea1263f17cffe4dff9f76c73"><td class="memItemLeft" align="right" valign="top">typedef enum <a class="el" href="group__ARP.html#ga2e835193fae158f288a1ee584570237b">switch_neighbor_type_</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__ARP.html#ga69538e64ea1263f17cffe4dff9f76c73">switch_neighbor_type_t</a></td></tr>
 <tr class="separator:ga69538e64ea1263f17cffe4dff9f76c73"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga253d2950c28e8aa3809590180772c8fb"><td class="memItemLeft" align="right" valign="top">typedef enum <br class="typebreak"/>
+<a class="el" href="group__ARP.html#ga2d302fb188cbf7de7178d887bc2e0fd7">switch_neighbor_rw_type_</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__ARP.html#ga253d2950c28e8aa3809590180772c8fb">switch_neighbor_rw_type_t</a></td></tr>
+<tr class="separator:ga253d2950c28e8aa3809590180772c8fb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gadf9efd0fd5e2b2b17f99fb8f60a4b087"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="structswitch__api__neighbor__.html">switch_api_neighbor_</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__ARP.html#gadf9efd0fd5e2b2b17f99fb8f60a4b087">switch_api_neighbor_t</a></td></tr>
 <tr class="separator:gadf9efd0fd5e2b2b17f99fb8f60a4b087"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="enum-members"></a>
 Enumerations</h2></td></tr>
 <tr class="memitem:ga2e835193fae158f288a1ee584570237b"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__ARP.html#ga2e835193fae158f288a1ee584570237b">switch_neighbor_type_</a> { <br/>
-&#160;&#160;<b>SWITCH_API_NEIGHBOR_L3_IPV4_UNICAST</b> = 0, 
-<b>SWITCH_API_NEIGHBOR_L3_IPV6_UNICAST</b> = 1, 
-<b>SWITCH_API_NEIGHBOR_MPLS_SWAP_L2VPN</b> = 2, 
-<b>SWITCH_API_NEIGHBOR_MPLS_SWAP_L3VPN</b> = 3, 
+&#160;&#160;<b>SWITCH_API_NEIGHBOR_NONE</b> = 0, 
+<b>SWITCH_API_NEIGHBOR_MPLS_SWAP_L2VPN</b> = 1, 
+<b>SWITCH_API_NEIGHBOR_MPLS_SWAP_L3VPN</b> = 2, 
+<b>SWITCH_API_NEIGHBOR_MPLS_SWAP_PUSH_L2VPN</b> = 3, 
 <br/>
-&#160;&#160;<b>SWITCH_API_NEIGHBOR_MPLS_SWAP_PUSH_L2VPN</b> = 4, 
-<b>SWITCH_API_NEIGHBOR_MPLS_SWAP_PUSH_L3VPN</b> = 5, 
-<b>SWITCH_API_NEIGHBOR_MPLS_PUSH_L2VPN</b> = 6, 
-<b>SWITCH_API_NEIGHBOR_MPLS_PUSH_L3VPN</b> = 7, 
+&#160;&#160;<b>SWITCH_API_NEIGHBOR_MPLS_SWAP_PUSH_L3VPN</b> = 4, 
+<b>SWITCH_API_NEIGHBOR_MPLS_PUSH_L2VPN</b> = 5, 
+<b>SWITCH_API_NEIGHBOR_MPLS_PUSH_L3VPN</b> = 6, 
+<b>SWITCH_API_NEIGHBOR_IPV4_TUNNEL</b> = 7, 
 <br/>
-&#160;&#160;<b>SWITCH_API_NEIGHBOR_VXLAN_IPV4</b> = 8, 
-<b>SWITCH_API_NEIGHBOR_VXLAN_IPV6</b> = 9, 
-<b>SWITCH_API_NEIGHBOR_NVGRE_IPV4</b> = 10, 
-<b>SWITCH_API_NEIGHBOR_NVGRE_IPV6</b> = 11, 
-<br/>
-&#160;&#160;<b>SWITCH_API_NEIGHBOR_GENEVE_IPV4</b> = 12, 
-<b>SWITCH_API_NEIGHBOR_GENEVE_IPV6</b> = 13
+&#160;&#160;<b>SWITCH_API_NEIGHBOR_IPV6_TUNNEL</b> = 8
 <br/>
  }</td></tr>
 <tr class="separator:ga2e835193fae158f288a1ee584570237b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga2d302fb188cbf7de7178d887bc2e0fd7"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__ARP.html#ga2d302fb188cbf7de7178d887bc2e0fd7">switch_neighbor_rw_type_</a> { <b>SWITCH_API_NEIGHBOR_RW_TYPE_L2</b> = 0, 
+<b>SWITCH_API_NEIGHBOR_RW_TYPE_L3</b> = 1
+ }</td></tr>
+<tr class="separator:ga2d302fb188cbf7de7178d887bc2e0fd7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
@@ -147,6 +148,19 @@ Functions</h2></td></tr>
 
 </div>
 </div>
+<a class="anchor" id="ga253d2950c28e8aa3809590180772c8fb"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef enum <a class="el" href="group__ARP.html#ga2d302fb188cbf7de7178d887bc2e0fd7">switch_neighbor_rw_type_</a>  <a class="el" href="group__ARP.html#ga253d2950c28e8aa3809590180772c8fb">switch_neighbor_rw_type_t</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Neighbor rewrite type </p>
+
+</div>
+</div>
 <a class="anchor" id="ga69538e64ea1263f17cffe4dff9f76c73"></a>
 <div class="memitem">
 <div class="memproto">
@@ -161,6 +175,19 @@ Functions</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Enumeration Type Documentation</h2>
+<a class="anchor" id="ga2d302fb188cbf7de7178d887bc2e0fd7"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="group__ARP.html#ga2d302fb188cbf7de7178d887bc2e0fd7">switch_neighbor_rw_type_</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Neighbor rewrite type </p>
+
+</div>
+</div>
 <a class="anchor" id="ga2e835193fae158f288a1ee584570237b"></a>
 <div class="memitem">
 <div class="memproto">
@@ -304,7 +331,7 @@ Functions</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue May 12 2015 20:52:41 for switchapi by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Jul 14 2015 15:44:35 for switchapi by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>

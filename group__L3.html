@@ -98,10 +98,10 @@ Enumerations</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:gafd5d8b3fad6c322c5d88d023750285ad"><td class="memItemLeft" align="right" valign="top">switch_status_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__L3.html#gafd5d8b3fad6c322c5d88d023750285ad">switch_api_l3_interface_address_add</a> (switch_handle_t interface_handle, switch_handle_t vrf, <a class="el" href="structswitch__ip__addr__.html">switch_ip_addr_t</a> *ip_addr)</td></tr>
-<tr class="separator:gafd5d8b3fad6c322c5d88d023750285ad"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gac139416bfa2e855b1b9f7274796bad41"><td class="memItemLeft" align="right" valign="top">switch_status_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__L3.html#gac139416bfa2e855b1b9f7274796bad41">switch_api_l3_interface_address_delete</a> (switch_handle_t interface_handle, switch_handle_t vrf, <a class="el" href="structswitch__ip__addr__.html">switch_ip_addr_t</a> *ip_addr)</td></tr>
-<tr class="separator:gac139416bfa2e855b1b9f7274796bad41"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gacb2280f6cf933fe492ad0c179fa17a00"><td class="memItemLeft" align="right" valign="top">switch_status_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__L3.html#gacb2280f6cf933fe492ad0c179fa17a00">switch_api_l3_interface_address_add</a> (switch_device_t device, switch_handle_t interface_handle, switch_handle_t vrf, <a class="el" href="structswitch__ip__addr__.html">switch_ip_addr_t</a> *ip_addr)</td></tr>
+<tr class="separator:gacb2280f6cf933fe492ad0c179fa17a00"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga17fb32d01fe4402ca07d6937d518c355"><td class="memItemLeft" align="right" valign="top">switch_status_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__L3.html#ga17fb32d01fe4402ca07d6937d518c355">switch_api_l3_interface_address_delete</a> (switch_device_t device, switch_handle_t interface_handle, switch_handle_t vrf, <a class="el" href="structswitch__ip__addr__.html">switch_ip_addr_t</a> *ip_addr)</td></tr>
+<tr class="separator:ga17fb32d01fe4402ca07d6937d518c355"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gaeecf14b96b55d3a1de78310712f3b412"><td class="memItemLeft" align="right" valign="top">switch_status_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__L3.html#gaeecf14b96b55d3a1de78310712f3b412">switch_api_l3_route_add</a> (switch_device_t device, switch_handle_t vrf, <a class="el" href="structswitch__ip__addr__.html">switch_ip_addr_t</a> *ip_addr, switch_handle_t nhop_handle)</td></tr>
 <tr class="separator:gaeecf14b96b55d3a1de78310712f3b412"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga9c3c2e8a9326a810eb3d682e0644cb99"><td class="memItemLeft" align="right" valign="top">switch_status_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__L3.html#ga9c3c2e8a9326a810eb3d682e0644cb99">switch_api_l3_route_delete</a> (switch_device_t device, switch_handle_t vrf, <a class="el" href="structswitch__ip__addr__.html">switch_ip_addr_t</a> *ip_addr, switch_handle_t nhop_handle)</td></tr>
@@ -300,13 +300,19 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="gafd5d8b3fad6c322c5d88d023750285ad"></a>
+<a class="anchor" id="gacb2280f6cf933fe492ad0c179fa17a00"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
           <td class="memname">switch_status_t switch_api_l3_interface_address_add </td>
           <td>(</td>
+          <td class="paramtype">switch_device_t&#160;</td>
+          <td class="paramname"><em>device</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
           <td class="paramtype">switch_handle_t&#160;</td>
           <td class="paramname"><em>interface_handle</em>, </td>
         </tr>
@@ -332,6 +338,7 @@ Functions</h2></td></tr>
 <p>Configure IP address on L3 interface </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
+    <tr><td class="paramname">device</td><td>device </td></tr>
     <tr><td class="paramname">interface_handle</td><td>interface handle returned from interface_create() </td></tr>
     <tr><td class="paramname">vrf</td><td>virtual domain identifier </td></tr>
     <tr><td class="paramname">ip_addr</td><td>IP address to be configured(v4 or v6) </td></tr>
@@ -341,13 +348,19 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="gac139416bfa2e855b1b9f7274796bad41"></a>
+<a class="anchor" id="ga17fb32d01fe4402ca07d6937d518c355"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
           <td class="memname">switch_status_t switch_api_l3_interface_address_delete </td>
           <td>(</td>
+          <td class="paramtype">switch_device_t&#160;</td>
+          <td class="paramname"><em>device</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
           <td class="paramtype">switch_handle_t&#160;</td>
           <td class="paramname"><em>interface_handle</em>, </td>
         </tr>
@@ -373,6 +386,7 @@ Functions</h2></td></tr>
 <p>Delete a configured IP address on interface </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
+    <tr><td class="paramname">device</td><td>device </td></tr>
     <tr><td class="paramname">interface_handle</td><td>interface handle returned from interface_create() </td></tr>
     <tr><td class="paramname">vrf</td><td>virtual domain identifier </td></tr>
     <tr><td class="paramname">ip_addr</td><td>IP address to be deleted </td></tr>
@@ -623,7 +637,7 @@ Functions</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue May 12 2015 20:52:41 for switchapi by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Jul 14 2015 15:44:35 for switchapi by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>

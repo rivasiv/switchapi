@@ -157,10 +157,10 @@ Functions</h2></td></tr>
 <tr class="separator:gab45d757a959222d494399ff31b2b363a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga6a33966b85c44a7f371f976a0eacc966"><td class="memItemLeft" align="right" valign="top">switch_status_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__Port.html#ga6a33966b85c44a7f371f976a0eacc966">switch_api_port_egress_rate_set</a> (switch_device_t device, switch_port_t port, unsigned int rate)</td></tr>
 <tr class="separator:ga6a33966b85c44a7f371f976a0eacc966"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga267b29e64602af819e34a4db3535e4d3"><td class="memItemLeft" align="right" valign="top">switch_status_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__Port.html#ga267b29e64602af819e34a4db3535e4d3">switch_api_port_set</a> (<a class="el" href="group__Port.html#gacee54bfba8ae98d2098baa57aa20071a">switch_api_port_info_t</a> *api_port_info)</td></tr>
-<tr class="separator:ga267b29e64602af819e34a4db3535e4d3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga0bf120fa613fed8eb402e35ae8a4d934"><td class="memItemLeft" align="right" valign="top">switch_status_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__Port.html#ga0bf120fa613fed8eb402e35ae8a4d934">switch_api_port_get</a> (<a class="el" href="group__Port.html#gacee54bfba8ae98d2098baa57aa20071a">switch_api_port_info_t</a> *api_port_info)</td></tr>
-<tr class="separator:ga0bf120fa613fed8eb402e35ae8a4d934"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga0df026f78db7fea364622bd6b8fda283"><td class="memItemLeft" align="right" valign="top">switch_status_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__Port.html#ga0df026f78db7fea364622bd6b8fda283">switch_api_port_set</a> (switch_device_t device, <a class="el" href="group__Port.html#gacee54bfba8ae98d2098baa57aa20071a">switch_api_port_info_t</a> *api_port_info)</td></tr>
+<tr class="separator:ga0df026f78db7fea364622bd6b8fda283"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gab9377eac11e64a53487d5c0f1fabafa4"><td class="memItemLeft" align="right" valign="top">switch_status_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__Port.html#gab9377eac11e64a53487d5c0f1fabafa4">switch_api_port_get</a> (switch_device_t device, <a class="el" href="group__Port.html#gacee54bfba8ae98d2098baa57aa20071a">switch_api_port_info_t</a> *api_port_info)</td></tr>
+<tr class="separator:gab9377eac11e64a53487d5c0f1fabafa4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga8cc20266d5e6a9b985cfd96e271d5297"><td class="memItemLeft" align="right" valign="top">switch_status_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__Port.html#ga8cc20266d5e6a9b985cfd96e271d5297">switch_api_port_print_all</a> (void)</td></tr>
 <tr class="separator:ga8cc20266d5e6a9b985cfd96e271d5297"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
@@ -490,22 +490,33 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="ga0bf120fa613fed8eb402e35ae8a4d934"></a>
+<a class="anchor" id="gab9377eac11e64a53487d5c0f1fabafa4"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
           <td class="memname">switch_status_t switch_api_port_get </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="group__Port.html#gacee54bfba8ae98d2098baa57aa20071a">switch_api_port_info_t</a> *&#160;</td>
-          <td class="paramname"><em>api_port_info</em></td><td>)</td>
+          <td class="paramtype">switch_device_t&#160;</td>
+          <td class="paramname"><em>device</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype"><a class="el" href="group__Port.html#gacee54bfba8ae98d2098baa57aa20071a">switch_api_port_info_t</a> *&#160;</td>
+          <td class="paramname"><em>api_port_info</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 <p>Get Port configuration </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
+    <tr><td class="paramname">device</td><td>device to use </td></tr>
     <tr><td class="paramname">api_port_info</td><td>port information inclduing port number (portnumber specified in port_info-&gt;port_number) </td></tr>
   </table>
   </dd>
@@ -920,22 +931,33 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="ga267b29e64602af819e34a4db3535e4d3"></a>
+<a class="anchor" id="ga0df026f78db7fea364622bd6b8fda283"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
           <td class="memname">switch_status_t switch_api_port_set </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="group__Port.html#gacee54bfba8ae98d2098baa57aa20071a">switch_api_port_info_t</a> *&#160;</td>
-          <td class="paramname"><em>api_port_info</em></td><td>)</td>
+          <td class="paramtype">switch_device_t&#160;</td>
+          <td class="paramname"><em>device</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype"><a class="el" href="group__Port.html#gacee54bfba8ae98d2098baa57aa20071a">switch_api_port_info_t</a> *&#160;</td>
+          <td class="paramname"><em>api_port_info</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 <p>Set Port configuration </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
+    <tr><td class="paramname">device</td><td>device to use </td></tr>
     <tr><td class="paramname">api_port_info</td><td>port information inclduing port number (portnumber specified in port_info-&gt;port_number) </td></tr>
   </table>
   </dd>
@@ -1069,7 +1091,7 @@ Functions</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue May 12 2015 20:52:41 for switchapi by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Jul 14 2015 15:44:35 for switchapi by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>

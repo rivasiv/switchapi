@@ -85,8 +85,8 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 Functions</h2></td></tr>
 <tr class="memitem:gacd74bdab6e8c02a9682456f9fc77959d"><td class="memItemLeft" align="right" valign="top">switch_handle_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__VLAN.html#gacd74bdab6e8c02a9682456f9fc77959d">switch_api_vlan_create</a> (switch_device_t device, switch_vlan_t vlan_id)</td></tr>
 <tr class="separator:gacd74bdab6e8c02a9682456f9fc77959d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gad891f473511aab73dcdd00e09f62938e"><td class="memItemLeft" align="right" valign="top">switch_status_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__VLAN.html#gad891f473511aab73dcdd00e09f62938e">switch_api_vlan_delete</a> (switch_handle_t vlan_handle)</td></tr>
-<tr class="separator:gad891f473511aab73dcdd00e09f62938e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga3f1af4649aa91ec0aa4d006df28abfa5"><td class="memItemLeft" align="right" valign="top">switch_status_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__VLAN.html#ga3f1af4649aa91ec0aa4d006df28abfa5">switch_api_vlan_delete</a> (switch_device_t device, switch_handle_t vlan_handle)</td></tr>
+<tr class="separator:ga3f1af4649aa91ec0aa4d006df28abfa5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga809ebc98905f093e502e4c57a5308173"><td class="memItemLeft" align="right" valign="top">switch_status_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__VLAN.html#ga809ebc98905f093e502e4c57a5308173">switch_api_vlan_attribute_set</a> (switch_handle_t vlan_handle, switch_vlan_attr_t attr_type, uint64_t value)</td></tr>
 <tr class="separator:ga809ebc98905f093e502e4c57a5308173"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga51adde4495c1e9e228726f15b263c8d8"><td class="memItemLeft" align="right" valign="top">switch_status_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__VLAN.html#ga51adde4495c1e9e228726f15b263c8d8">switch_api_vlan_attribute_get</a> (switch_handle_t vlan_handle, switch_vlan_attr_t attr_type, uint64_t *value)</td></tr>
@@ -119,14 +119,18 @@ Functions</h2></td></tr>
 <tr class="separator:ga0e9b05fbd0809d5d5e23c1e521aca76b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gab2c83e0e82d50e1d30fdc67ca8ffdfc5"><td class="memItemLeft" align="right" valign="top">switch_status_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__VLAN.html#gab2c83e0e82d50e1d30fdc67ca8ffdfc5">switch_api_vlan_aging_interval_get</a> (switch_handle_t vlan_handle, uint64_t *value)</td></tr>
 <tr class="separator:gab2c83e0e82d50e1d30fdc67ca8ffdfc5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gabcdb59ffb99d6f13fc58b08bcfac1915"><td class="memItemLeft" align="right" valign="top">switch_status_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__VLAN.html#gabcdb59ffb99d6f13fc58b08bcfac1915">switch_api_vlan_ports_add</a> (switch_handle_t vlan_handle, uint8_t port_count, switch_handle_t *interface_handle)</td></tr>
-<tr class="separator:gabcdb59ffb99d6f13fc58b08bcfac1915"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gae9e9e4e42edf71090065a756c61aa08c"><td class="memItemLeft" align="right" valign="top">switch_status_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__VLAN.html#gae9e9e4e42edf71090065a756c61aa08c">switch_api_vlan_ports_remove</a> (switch_handle_t vlan_handle, uint8_t port_count, switch_handle_t *interface_handle)</td></tr>
-<tr class="separator:gae9e9e4e42edf71090065a756c61aa08c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gad4bee3b4793f155dff5776b3f8d45843"><td class="memItemLeft" align="right" valign="top">switch_status_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__VLAN.html#gad4bee3b4793f155dff5776b3f8d45843">switch_api_vlan_ports_add</a> (switch_device_t device, switch_handle_t vlan_handle, uint16_t port_count, <a class="el" href="structswitch__vlan__port__.html">switch_vlan_port_t</a> *vlan_port)</td></tr>
+<tr class="separator:gad4bee3b4793f155dff5776b3f8d45843"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaef3bcd29dc31d91c31e4d8b37724ed50"><td class="memItemLeft" align="right" valign="top">switch_status_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__VLAN.html#gaef3bcd29dc31d91c31e4d8b37724ed50">switch_api_vlan_ports_remove</a> (switch_device_t device, switch_handle_t vlan_handle, uint16_t port_count, <a class="el" href="structswitch__vlan__port__.html">switch_vlan_port_t</a> *vlan_port)</td></tr>
+<tr class="separator:gaef3bcd29dc31d91c31e4d8b37724ed50"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga5185673a655d8384e0b1daec7421577f"><td class="memItemLeft" align="right" valign="top">switch_handle_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__VLAN.html#ga5185673a655d8384e0b1daec7421577f">switch_api_logical_network_create</a> (switch_device_t device, <a class="el" href="structswitch__logical__network__.html">switch_logical_network_t</a> *ln_info)</td></tr>
 <tr class="separator:ga5185673a655d8384e0b1daec7421577f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gaee96e3c37c1ebc6562ea4a548b38413e"><td class="memItemLeft" align="right" valign="top">switch_status_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__VLAN.html#gaee96e3c37c1ebc6562ea4a548b38413e">switch_api_logical_network_delete</a> (switch_device_t device, switch_handle_t network_handle)</td></tr>
 <tr class="separator:gaee96e3c37c1ebc6562ea4a548b38413e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga07845346c4f72d097cbe7c50e179cfa6"><td class="memItemLeft" align="right" valign="top">switch_status_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__VLAN.html#ga07845346c4f72d097cbe7c50e179cfa6">switch_api_vlan_id_to_handle_set</a> (switch_vlan_t vlan_id, switch_handle_t vlan_handle)</td></tr>
+<tr class="separator:ga07845346c4f72d097cbe7c50e179cfa6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga32f424c9f8364e467fb83c9ecb4202c7"><td class="memItemLeft" align="right" valign="top">switch_status_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__VLAN.html#ga32f424c9f8364e467fb83c9ecb4202c7">switch_api_vlan_id_to_handle_get</a> (switch_vlan_t vlan_id, switch_handle_t *vlan_handle)</td></tr>
+<tr class="separator:ga32f424c9f8364e467fb83c9ecb4202c7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gaa3fc3ae590e6754c648c7bc1798e1593"><td class="memItemLeft" align="right" valign="top">switch_status_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__VLAN.html#gaa3fc3ae590e6754c648c7bc1798e1593">switch_api_vlan_print_all</a> (void)</td></tr>
 <tr class="separator:gaa3fc3ae590e6754c648c7bc1798e1593"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
@@ -581,7 +585,7 @@ Functions</h2></td></tr>
 <p>VLAN create </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">device</td><td>device on which to create VLAN </td></tr>
+    <tr><td class="paramname">device</td><td>device </td></tr>
     <tr><td class="paramname">vlan_id</td><td>Id of the VLAN </td></tr>
   </table>
   </dd>
@@ -589,22 +593,33 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="gad891f473511aab73dcdd00e09f62938e"></a>
+<a class="anchor" id="ga3f1af4649aa91ec0aa4d006df28abfa5"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
           <td class="memname">switch_status_t switch_api_vlan_delete </td>
           <td>(</td>
-          <td class="paramtype">switch_handle_t&#160;</td>
-          <td class="paramname"><em>vlan_handle</em></td><td>)</td>
+          <td class="paramtype">switch_device_t&#160;</td>
+          <td class="paramname"><em>device</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype">switch_handle_t&#160;</td>
+          <td class="paramname"><em>vlan_handle</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 <p>Delete VLAN </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
+    <tr><td class="paramname">device</td><td>device </td></tr>
     <tr><td class="paramname">vlan_handle</td><td>handle of VLAN returned by create </td></tr>
   </table>
   </dd>
@@ -680,6 +695,74 @@ Functions</h2></td></tr>
 
 </div>
 </div>
+<a class="anchor" id="ga32f424c9f8364e467fb83c9ecb4202c7"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">switch_status_t switch_api_vlan_id_to_handle_get </td>
+          <td>(</td>
+          <td class="paramtype">switch_vlan_t&#160;</td>
+          <td class="paramname"><em>vlan_id</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">switch_handle_t *&#160;</td>
+          <td class="paramname"><em>vlan_handle</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Get vlan id to vlan handle mapping </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">vlan_id</td><td>vlan id </td></tr>
+    <tr><td class="paramname">vlan_handle</td><td>vlan handle </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="ga07845346c4f72d097cbe7c50e179cfa6"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">switch_status_t switch_api_vlan_id_to_handle_set </td>
+          <td>(</td>
+          <td class="paramtype">switch_vlan_t&#160;</td>
+          <td class="paramname"><em>vlan_id</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">switch_handle_t&#160;</td>
+          <td class="paramname"><em>vlan_handle</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Set vlan id to vlan handle mapping </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">vlan_id</td><td>vlan id </td></tr>
+    <tr><td class="paramname">vlan_handle</td><td>vlan handle </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a class="anchor" id="ga3711e44a3a88d782418342120ce806ca"></a>
 <div class="memitem">
 <div class="memproto">
@@ -748,27 +831,33 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="gabcdb59ffb99d6f13fc58b08bcfac1915"></a>
+<a class="anchor" id="gad4bee3b4793f155dff5776b3f8d45843"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
           <td class="memname">switch_status_t switch_api_vlan_ports_add </td>
           <td>(</td>
+          <td class="paramtype">switch_device_t&#160;</td>
+          <td class="paramname"><em>device</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
           <td class="paramtype">switch_handle_t&#160;</td>
           <td class="paramname"><em>vlan_handle</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">uint8_t&#160;</td>
+          <td class="paramtype">uint16_t&#160;</td>
           <td class="paramname"><em>port_count</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">switch_handle_t *&#160;</td>
-          <td class="paramname"><em>interface_handle</em>&#160;</td>
+          <td class="paramtype"><a class="el" href="structswitch__vlan__port__.html">switch_vlan_port_t</a> *&#160;</td>
+          <td class="paramname"><em>vlan_port</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -780,36 +869,43 @@ Functions</h2></td></tr>
 <p>Add ports to vlan. By default, ports will be added to the flood list based on the flood type. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
+    <tr><td class="paramname">device</td><td>device </td></tr>
     <tr><td class="paramname">vlan_handle</td><td>- Vlan handle that identifies vlan uniquely </td></tr>
     <tr><td class="paramname">port_count</td><td>- Number of ports to be added to vlan </td></tr>
-    <tr><td class="paramname">interface_handle</td><td>- List of interfaces </td></tr>
+    <tr><td class="paramname">vlan_port</td><td>- List of interfaces/ports/lags </td></tr>
   </table>
   </dd>
 </dl>
 
 </div>
 </div>
-<a class="anchor" id="gae9e9e4e42edf71090065a756c61aa08c"></a>
+<a class="anchor" id="gaef3bcd29dc31d91c31e4d8b37724ed50"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
           <td class="memname">switch_status_t switch_api_vlan_ports_remove </td>
           <td>(</td>
+          <td class="paramtype">switch_device_t&#160;</td>
+          <td class="paramname"><em>device</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
           <td class="paramtype">switch_handle_t&#160;</td>
           <td class="paramname"><em>vlan_handle</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">uint8_t&#160;</td>
+          <td class="paramtype">uint16_t&#160;</td>
           <td class="paramname"><em>port_count</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">switch_handle_t *&#160;</td>
-          <td class="paramname"><em>interface_handle</em>&#160;</td>
+          <td class="paramtype"><a class="el" href="structswitch__vlan__port__.html">switch_vlan_port_t</a> *&#160;</td>
+          <td class="paramname"><em>vlan_port</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -821,9 +917,10 @@ Functions</h2></td></tr>
 <p>Remove ports from vlan. By default, ports will be removed from flood list based on the flood type. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
+    <tr><td class="paramname">device</td><td>device </td></tr>
     <tr><td class="paramname">vlan_handle</td><td>- Vlan handle that identifies vlan uniquely </td></tr>
     <tr><td class="paramname">port_count</td><td>- Number of ports to be removed from vlan </td></tr>
-    <tr><td class="paramname">interface_handle</td><td>- List of interfaces </td></tr>
+    <tr><td class="paramname">vlan_port-</td><td>List of interfaces/ports/lags </td></tr>
   </table>
   </dd>
 </dl>
@@ -918,7 +1015,7 @@ Functions</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue May 12 2015 20:52:41 for switchapi by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Jul 14 2015 15:44:35 for switchapi by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>

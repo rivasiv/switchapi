@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['router_20mac_20api',['Router MAC API',['../group__RMAC.html',1,'']]]
+  ['port_20configuration_20api',['Port configuration API',['../group__Port.html',1,'']]],
+  ['protocol_20types_20and_20info',['Protocol types and info',['../group__Protocol.html',1,'']]]
 ];

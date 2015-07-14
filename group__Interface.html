@@ -140,8 +140,8 @@ Enumerations</h2></td></tr>
 Functions</h2></td></tr>
 <tr class="memitem:ga95c0e934cea4a8d13cd6b2226f4a19c0"><td class="memItemLeft" align="right" valign="top">switch_handle_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__Interface.html#ga95c0e934cea4a8d13cd6b2226f4a19c0">switch_api_interface_create</a> (switch_device_t device, <a class="el" href="group__Interface.html#ga32c116fa0d73422c1b64d0756398fede">switch_api_interface_info_t</a> *intf_info)</td></tr>
 <tr class="separator:ga95c0e934cea4a8d13cd6b2226f4a19c0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga91ad47a82853fe4b00a8fc0bf12bee40"><td class="memItemLeft" align="right" valign="top">switch_status_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__Interface.html#ga91ad47a82853fe4b00a8fc0bf12bee40">switch_api_interface_delete</a> (switch_handle_t interface_handle)</td></tr>
-<tr class="separator:ga91ad47a82853fe4b00a8fc0bf12bee40"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga214963b57668bb3ac31e97ce2ec1288c"><td class="memItemLeft" align="right" valign="top">switch_status_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__Interface.html#ga214963b57668bb3ac31e97ce2ec1288c">switch_api_interface_delete</a> (switch_device_t device, switch_handle_t interface_handle)</td></tr>
+<tr class="separator:ga214963b57668bb3ac31e97ce2ec1288c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga5fd5a7145c0f89e5086fa35c5f8e0539"><td class="memItemLeft" align="right" valign="top">switch_status_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__Interface.html#ga5fd5a7145c0f89e5086fa35c5f8e0539">switch_api_interface_attribute_set</a> (switch_handle_t intf_handle, <a class="el" href="group__Interface.html#ga85de952c2186d42cea89f25c95b10fd5">switch_intf_attr_t</a> attr_type, uint64_t value)</td></tr>
 <tr class="separator:ga5fd5a7145c0f89e5086fa35c5f8e0539"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gaefad4683d2e22950f0f2c3a9078b4110"><td class="memItemLeft" align="right" valign="top">switch_status_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__Interface.html#gaefad4683d2e22950f0f2c3a9078b4110">switch_api_interface_attribute_get</a> (switch_handle_t intf_handle, <a class="el" href="group__Interface.html#ga85de952c2186d42cea89f25c95b10fd5">switch_intf_attr_t</a> attr_type, uint64_t *value)</td></tr>
@@ -430,22 +430,33 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="ga91ad47a82853fe4b00a8fc0bf12bee40"></a>
+<a class="anchor" id="ga214963b57668bb3ac31e97ce2ec1288c"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
           <td class="memname">switch_status_t switch_api_interface_delete </td>
           <td>(</td>
-          <td class="paramtype">switch_handle_t&#160;</td>
-          <td class="paramname"><em>interface_handle</em></td><td>)</td>
+          <td class="paramtype">switch_device_t&#160;</td>
+          <td class="paramname"><em>device</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype">switch_handle_t&#160;</td>
+          <td class="paramname"><em>interface_handle</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 <p>Interface delete </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
+    <tr><td class="paramname">device</td><td>- device on which interface is created </td></tr>
     <tr><td class="paramname">interface_handle</td><td>handle returned by interface creation </td></tr>
   </table>
   </dd>
@@ -700,7 +711,7 @@ Functions</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue May 12 2015 20:52:41 for switchapi by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Jul 14 2015 15:44:35 for switchapi by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>

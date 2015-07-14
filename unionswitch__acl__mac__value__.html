@@ -95,20 +95,24 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 Public Attributes</h2></td></tr>
 <tr class="memitem:abcb655666230c1fd1b473a4994e63dd7"><td class="memItemLeft" align="right" valign="top">unsigned short&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="unionswitch__acl__mac__value__.html#abcb655666230c1fd1b473a4994e63dd7">eth_type</a></td></tr>
 <tr class="separator:abcb655666230c1fd1b473a4994e63dd7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad959048548405746225c9cd024d40ac2"><td class="memItemLeft" align="right" valign="top">uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="unionswitch__acl__mac__value__.html#ad959048548405746225c9cd024d40ac2">source_mac</a></td></tr>
-<tr class="separator:ad959048548405746225c9cd024d40ac2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ace08b6f17bfbb433298ccf3e5b8e49b1"><td class="memItemLeft" align="right" valign="top">uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="unionswitch__acl__mac__value__.html#ace08b6f17bfbb433298ccf3e5b8e49b1">dest_mac</a></td></tr>
-<tr class="separator:ace08b6f17bfbb433298ccf3e5b8e49b1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8df7c9b725a13b1a1c93c39f937fc8d5"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="unionswitch__acl__mac__value__.html#a8df7c9b725a13b1a1c93c39f937fc8d5">source_mac</a> [6]</td></tr>
+<tr class="separator:a8df7c9b725a13b1a1c93c39f937fc8d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a30ea531c82dac3dedf0765d8be164a51"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="unionswitch__acl__mac__value__.html#a30ea531c82dac3dedf0765d8be164a51">dest_mac</a> [6]</td></tr>
+<tr class="separator:a30ea531c82dac3dedf0765d8be164a51"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a349ea85127b615ea30a93dbce4645636"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="unionswitch__acl__mac__value__.html#a349ea85127b615ea30a93dbce4645636">vlan_pri</a></td></tr>
+<tr class="separator:a349ea85127b615ea30a93dbce4645636"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6c38bed7dd33935228f75926adb49c97"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="unionswitch__acl__mac__value__.html#a6c38bed7dd33935228f75926adb49c97">vlan_cfi</a></td></tr>
+<tr class="separator:a6c38bed7dd33935228f75926adb49c97"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Acl mac field list </p>
 </div><h2 class="groupheader">Member Data Documentation</h2>
-<a class="anchor" id="ace08b6f17bfbb433298ccf3e5b8e49b1"></a>
+<a class="anchor" id="a30ea531c82dac3dedf0765d8be164a51"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">uint64_t switch_acl_mac_value_::dest_mac</td>
+          <td class="memname">uint8_t switch_acl_mac_value_::dest_mac[6]</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -129,16 +133,42 @@ Public Attributes</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="ad959048548405746225c9cd024d40ac2"></a>
+<a class="anchor" id="a8df7c9b725a13b1a1c93c39f937fc8d5"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">uint64_t switch_acl_mac_value_::source_mac</td>
+          <td class="memname">uint8_t switch_acl_mac_value_::source_mac[6]</td>
         </tr>
       </table>
 </div><div class="memdoc">
 <p>source mac </p>
+
+</div>
+</div>
+<a class="anchor" id="a6c38bed7dd33935228f75926adb49c97"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint8_t switch_acl_mac_value_::vlan_cfi</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>drop eligible </p>
+
+</div>
+</div>
+<a class="anchor" id="a349ea85127b615ea30a93dbce4645636"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint8_t switch_acl_mac_value_::vlan_pri</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>VLAN priority </p>
 
 </div>
 </div>
@@ -148,7 +178,7 @@ Public Attributes</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue May 12 2015 20:52:41 for switchapi by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Jul 14 2015 15:44:35 for switchapi by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>

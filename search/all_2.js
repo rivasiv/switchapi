@@ -1,5 +1,6 @@
 var searchData=
 [
+  ['channel',['channel',['../structswitch__sup__code__info.html#abc5f2b8d60c89d156a210bf10c3bc79f',1,'switch_sup_code_info']]],
   ['checksum',['checksum',['../structswitch__gre__t.html#a88c56779e53fdfd88f22b0164fad8363',1,'switch_gre_t']]],
   ['control_5fframe',['control_frame',['../unionswitch__acl__system__value__.html#a286860cc03653d754b4f0241f6971554',1,'switch_acl_system_value_']]],
   ['core_5fbd',['core_bd',['../structswitch__logical__network__.html#a1bbe87cb61b3a85a8c2fd24b894456c1',1,'switch_logical_network_']]],

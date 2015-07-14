@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['interface_20configuration_20api',['Interface configuration API',['../group__Interface.html',1,'']]]
+  ['host_20interface_20api',['Host Interface API',['../group__HostInterface.html',1,'']]]
 ];

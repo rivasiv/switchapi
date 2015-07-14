@@ -119,12 +119,12 @@ Enumerations</h2></td></tr>
 Functions</h2></td></tr>
 <tr class="memitem:gafed2569500a272096d11eb38447a6dbf"><td class="memItemLeft" align="right" valign="top">switch_handle_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__stp.html#gafed2569500a272096d11eb38447a6dbf">switch_api_stp_group_create</a> (switch_device_t device, <a class="el" href="group__stp.html#ga035989f5b66364811135ccdf18d03e9b">switch_stp_mode_t</a> stp_mode)</td></tr>
 <tr class="separator:gafed2569500a272096d11eb38447a6dbf"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga1d0ee8ab81448a2f1a3dc05d318df29b"><td class="memItemLeft" align="right" valign="top">switch_status_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__stp.html#ga1d0ee8ab81448a2f1a3dc05d318df29b">switch_api_stp_group_delete</a> (switch_handle_t stg_handle)</td></tr>
-<tr class="separator:ga1d0ee8ab81448a2f1a3dc05d318df29b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga4e914fecbe13723cc995e506c6505a3c"><td class="memItemLeft" align="right" valign="top">switch_status_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__stp.html#ga4e914fecbe13723cc995e506c6505a3c">switch_api_stp_group_vlan_add</a> (switch_handle_t stg_handle, switch_handle_t vlan_handle)</td></tr>
-<tr class="separator:ga4e914fecbe13723cc995e506c6505a3c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:gae6b46d629607512b311e45c1f653c892"><td class="memItemLeft" align="right" valign="top">switch_status_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__stp.html#gae6b46d629607512b311e45c1f653c892">switch_api_stp_group_vlan_remove</a> (switch_handle_t stg_handle, switch_handle_t vlan_handle)</td></tr>
-<tr class="separator:gae6b46d629607512b311e45c1f653c892"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga7e0863f51051a847228c6eee64cce236"><td class="memItemLeft" align="right" valign="top">switch_status_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__stp.html#ga7e0863f51051a847228c6eee64cce236">switch_api_stp_group_delete</a> (switch_device_t device, switch_handle_t stg_handle)</td></tr>
+<tr class="separator:ga7e0863f51051a847228c6eee64cce236"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga48e8a43fc27e37f876153a9888813a53"><td class="memItemLeft" align="right" valign="top">switch_status_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__stp.html#ga48e8a43fc27e37f876153a9888813a53">switch_api_stp_group_vlans_add</a> (switch_device_t device, switch_handle_t stg_handle, uint16_t vlan_count, switch_handle_t *vlan_handle)</td></tr>
+<tr class="separator:ga48e8a43fc27e37f876153a9888813a53"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gadc28d919d91bec2dd8c0f38d5e6997b6"><td class="memItemLeft" align="right" valign="top">switch_status_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__stp.html#gadc28d919d91bec2dd8c0f38d5e6997b6">switch_api_stp_group_vlans_remove</a> (switch_device_t device, switch_handle_t stg_handle, uint16_t vlan_count, switch_handle_t *vlan_handle)</td></tr>
+<tr class="separator:gadc28d919d91bec2dd8c0f38d5e6997b6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga9efec07b6deaca85462895325e2db497"><td class="memItemLeft" align="right" valign="top">switch_status_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__stp.html#ga9efec07b6deaca85462895325e2db497">switch_api_stp_port_state_set</a> (switch_device_t device, switch_handle_t stg_handle, switch_handle_t intf_handle, <a class="el" href="group__stp.html#ga2b0807c5d9821262ccdc024cf14c41b7">switch_stp_state_t</a> state)</td></tr>
 <tr class="separator:ga9efec07b6deaca85462895325e2db497"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga421d4f754b261d695853243590f5853c"><td class="memItemLeft" align="right" valign="top">switch_status_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__stp.html#ga421d4f754b261d695853243590f5853c">switch_api_stp_port_state_get</a> (switch_device_t device, switch_handle_t stg_handle, switch_handle_t intf_handle, <a class="el" href="group__stp.html#ga2b0807c5d9821262ccdc024cf14c41b7">switch_stp_state_t</a> *state)</td></tr>
@@ -239,22 +239,33 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="ga1d0ee8ab81448a2f1a3dc05d318df29b"></a>
+<a class="anchor" id="ga7e0863f51051a847228c6eee64cce236"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
           <td class="memname">switch_status_t switch_api_stp_group_delete </td>
           <td>(</td>
-          <td class="paramtype">switch_handle_t&#160;</td>
-          <td class="paramname"><em>stg_handle</em></td><td>)</td>
+          <td class="paramtype">switch_device_t&#160;</td>
+          <td class="paramname"><em>device</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype">switch_handle_t&#160;</td>
+          <td class="paramname"><em>stg_handle</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 <p>Delete a spanning tree group </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
+    <tr><td class="paramname">device</td><td>device </td></tr>
     <tr><td class="paramname">stg_handle</td><td>handle of the spanning tree group </td></tr>
   </table>
   </dd>
@@ -279,20 +290,32 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="ga4e914fecbe13723cc995e506c6505a3c"></a>
+<a class="anchor" id="ga48e8a43fc27e37f876153a9888813a53"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">switch_status_t switch_api_stp_group_vlan_add </td>
+          <td class="memname">switch_status_t switch_api_stp_group_vlans_add </td>
           <td>(</td>
+          <td class="paramtype">switch_device_t&#160;</td>
+          <td class="paramname"><em>device</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
           <td class="paramtype">switch_handle_t&#160;</td>
           <td class="paramname"><em>stg_handle</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">switch_handle_t&#160;</td>
+          <td class="paramtype">uint16_t&#160;</td>
+          <td class="paramname"><em>vlan_count</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">switch_handle_t *&#160;</td>
           <td class="paramname"><em>vlan_handle</em>&#160;</td>
         </tr>
         <tr>
@@ -305,28 +328,42 @@ Functions</h2></td></tr>
 <p>Add VLAN to the stp </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
+    <tr><td class="paramname">device</td><td>device </td></tr>
     <tr><td class="paramname">stg_handle</td><td>spanning tree group handle </td></tr>
-    <tr><td class="paramname">vlan_handle</td><td>Vlan handle </td></tr>
+    <tr><td class="paramname">vlan_count</td><td>count of vlans </td></tr>
+    <tr><td class="paramname">vlan_handle</td><td>list of vlan handles </td></tr>
   </table>
   </dd>
 </dl>
 
 </div>
 </div>
-<a class="anchor" id="gae6b46d629607512b311e45c1f653c892"></a>
+<a class="anchor" id="gadc28d919d91bec2dd8c0f38d5e6997b6"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">switch_status_t switch_api_stp_group_vlan_remove </td>
+          <td class="memname">switch_status_t switch_api_stp_group_vlans_remove </td>
           <td>(</td>
+          <td class="paramtype">switch_device_t&#160;</td>
+          <td class="paramname"><em>device</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
           <td class="paramtype">switch_handle_t&#160;</td>
           <td class="paramname"><em>stg_handle</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">switch_handle_t&#160;</td>
+          <td class="paramtype">uint16_t&#160;</td>
+          <td class="paramname"><em>vlan_count</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">switch_handle_t *&#160;</td>
           <td class="paramname"><em>vlan_handle</em>&#160;</td>
         </tr>
         <tr>
@@ -339,8 +376,10 @@ Functions</h2></td></tr>
 <p>Remove VLAN from the stp </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
+    <tr><td class="paramname">device</td><td>device </td></tr>
     <tr><td class="paramname">stg_handle</td><td>spanning tree group handle </td></tr>
-    <tr><td class="paramname">vlan_handle</td><td>Vlan handle </td></tr>
+    <tr><td class="paramname">vlan_count</td><td>count of vlans </td></tr>
+    <tr><td class="paramname">vlan_handle</td><td>list of vlan handles </td></tr>
   </table>
   </dd>
 </dl>
@@ -487,7 +526,7 @@ Functions</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue May 12 2015 20:52:41 for switchapi by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Jul 14 2015 15:44:35 for switchapi by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>

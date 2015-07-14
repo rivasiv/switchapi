@@ -10,7 +10,5 @@ var searchData=
   ['learn_5fenable',['learn_enable',['../structswitch__api__port__info__.html#a6335f00a6344be58d92fb7975b4c06de',1,'switch_api_port_info_']]],
   ['learn_5fenabled',['learn_enabled',['../structswitch__logical__network__.html#a06b3d07d8a12f8582a0c2440af4d4cee',1,'switch_logical_network_']]],
   ['lossless',['lossless',['../structswitch__pfc__config__.html#a834f106c9f805e0771f65accf65d575b',1,'switch_pfc_config_']]],
-  ['low',['low',['../structuint128__t.html#a2f03c629eb48944a860ce00fdd348b9c',1,'uint128_t']]],
-  ['lu_5fbypass_5fegress',['lu_bypass_egress',['../structswitch__cpu__header__t.html#ab8f263048b03b82f9acfa0d4615aa332',1,'switch_cpu_header_t']]],
-  ['lu_5fbypass_5fingress',['lu_bypass_ingress',['../structswitch__cpu__header__t.html#a0065e8bbdf3f89b68d529351ba19600f',1,'switch_cpu_header_t']]]
+  ['low',['low',['../structuint128__t.html#a2f03c629eb48944a860ce00fdd348b9c',1,'uint128_t']]]
 ];
