@@ -8,9 +8,10 @@ var searchData=
   ['initial_5fsize',['initial_size',['../structswitch__handle__info__t.html#ac778327322fe5f46478f47cb963a8339',1,'switch_handle_info_t']]],
   ['inner',['inner',['../structswitch__qinq__t.html#abacf0d8779c5dd18c2326bcb8082dc4d',1,'switch_qinq_t']]],
   ['interface',['interface',['../structswitch__api__neighbor__.html#a1a19c61eda8e9faa99ca8152231e5c06',1,'switch_api_neighbor_::interface()'],['../group__Interface.html',1,'(Global Namespace)']]],
+  ['interface_5flist',['interface_list',['../structswitch__acl__info__.html#a14b1ac97f4bbed8cdab95079a237e1d4',1,'switch_acl_info_']]],
   ['intf_5fhandle',['intf_handle',['../structswitch__nhop__key__.html#a04f6d0f2fb360b46d0203dfd6a02cbb4',1,'switch_nhop_key_']]],
-  ['intf_5fname',['intf_name',['../structswitch__sup__interface__.html#a0b107dc7442d57d31849890b82f10271',1,'switch_sup_interface_']]],
-  ['ip',['ip',['../structswitch__ip__addr__.html#a7a75f28f1d62076a02cf2a684ee75e83',1,'switch_ip_addr_']]],
+  ['intf_5fname',['intf_name',['../structswitch__hostif__.html#a2b41d584293d9375ce9e9a10f152578d',1,'switch_hostif_']]],
+  ['ip',['ip',['../structswitch__ip__addr__.html#a503aa1493270ebd40d822b92ed588756',1,'switch_ip_addr_']]],
   ['ip_5faddr',['ip_addr',['../structswitch__api__neighbor__.html#ab1b36c4b863e7c0c7f7e28260190b61c',1,'switch_api_neighbor_::ip_addr()'],['../structswitch__nhop__key__.html#a2bb7ff411b818f26b69280a391f7a9c5',1,'switch_nhop_key_::ip_addr()']]],
   ['ip_5faddr_5fvalid',['ip_addr_valid',['../structswitch__nhop__key__.html#a30a6904c58e1962819bbe85612995241',1,'switch_nhop_key_']]],
   ['ip_5fencap',['ip_encap',['../structswitch__tunnel__info__.html#aab9c9d2adca9477fdf7c355189f3749f',1,'switch_tunnel_info_']]],
@@ -31,5 +32,5 @@ var searchData=
   ['ipv6_5fterm',['ipv6_term',['../structswitch__api__port__info__.html#a30d1d9c986c6bdace32a2eacbb09c6bd',1,'switch_api_port_info_']]],
   ['ipv6_5funicast_5fenabled',['ipv6_unicast_enabled',['../structswitch__api__interface__info__.html#a32a6dae182757e3aa90a64a55d3aa826',1,'switch_api_interface_info_::ipv6_unicast_enabled()'],['../structswitch__logical__network__.html#a4418b2b40db49fbaf5d10fc54d06f65d',1,'switch_logical_network_::ipv6_unicast_enabled()']]],
   ['ipv6_5furpf_5fmode',['ipv6_urpf_mode',['../structswitch__api__interface__info__.html#adbaeda1d427ce391746e8d38ab70daca',1,'switch_api_interface_info_']]],
-  ['is_5flag',['is_lag',['../structswitch__sup__packet__.html#abe77b5e511f03e0d943df8b5f81c3293',1,'switch_sup_packet_']]]
+  ['is_5flag',['is_lag',['../structswitch__hostif__packet__.html#a064abab30cb1f8985d0be68a289ee443',1,'switch_hostif_packet_']]]
 ];

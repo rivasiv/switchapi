@@ -144,28 +144,29 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;                                              switch_handle_t stg_handle,</div>
 <div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;                                              uint16_t vlan_count,</div>
 <div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;                                              switch_handle_t *vlan_handle);</div>
-<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;switch_status_t <a class="code" href="group__stp.html#gadc28d919d91bec2dd8c0f38d5e6997b6">switch_api_stp_group_vlans_remove</a>(switch_device_t device,</div>
-<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;                                                 switch_handle_t stg_handle,</div>
-<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;                                                 uint16_t vlan_count,</div>
-<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;                                                 switch_handle_t *vlan_handle);</div>
-<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;</div>
-<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;switch_status_t <a class="code" href="group__stp.html#ga9efec07b6deaca85462895325e2db497">switch_api_stp_port_state_set</a>(switch_device_t device, switch_handle_t stg_handle,</div>
-<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;                                      switch_handle_t intf_handle, <a class="code" href="group__stp.html#ga2b0807c5d9821262ccdc024cf14c41b7">switch_stp_state_t</a> state);</div>
-<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;</div>
-<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;switch_status_t <a class="code" href="group__stp.html#ga421d4f754b261d695853243590f5853c">switch_api_stp_port_state_get</a>(switch_device_t device, switch_handle_t stg_handle,</div>
-<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;                                      switch_handle_t intf_handle, <a class="code" href="group__stp.html#ga2b0807c5d9821262ccdc024cf14c41b7">switch_stp_state_t</a> *state);</div>
-<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;</div>
-<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;switch_status_t <a class="code" href="group__stp.html#ga9aae1334999c6c1c1e10821dd596280d">switch_api_stp_port_state_clear</a>(switch_device_t device, switch_handle_t stg_handle,</div>
-<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;                                       switch_handle_t intf_handle);</div>
-<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;</div>
-<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;switch_status_t <a class="code" href="group__stp.html#ga1b365b23218a21b1b0a6197b4297c890">switch_api_stp_group_print_all</a>(<span class="keywordtype">void</span>);</div>
-<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;</div>
-<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;<span class="comment">// end of stp</span></div>
-<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;<span class="preprocessor">#ifdef __cplusplus</span></div>
-<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;<span class="preprocessor"></span>}</div>
-<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;switch_status_t <a class="code" href="group__stp.html#gadc28d919d91bec2dd8c0f38d5e6997b6">switch_api_stp_group_vlans_remove</a>(switch_device_t device,</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;                                                 switch_handle_t stg_handle,</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;                                                 uint16_t vlan_count,</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;                                                 switch_handle_t *vlan_handle);</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;</div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;switch_status_t <a class="code" href="group__stp.html#ga9efec07b6deaca85462895325e2db497">switch_api_stp_port_state_set</a>(switch_device_t device, switch_handle_t stg_handle,</div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;                                      switch_handle_t intf_handle, <a class="code" href="group__stp.html#ga2b0807c5d9821262ccdc024cf14c41b7">switch_stp_state_t</a> state);</div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;</div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;switch_status_t <a class="code" href="group__stp.html#ga421d4f754b261d695853243590f5853c">switch_api_stp_port_state_get</a>(switch_device_t device, switch_handle_t stg_handle,</div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;                                      switch_handle_t intf_handle, <a class="code" href="group__stp.html#ga2b0807c5d9821262ccdc024cf14c41b7">switch_stp_state_t</a> *state);</div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;</div>
+<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;switch_status_t <a class="code" href="group__stp.html#ga9aae1334999c6c1c1e10821dd596280d">switch_api_stp_port_state_clear</a>(switch_device_t device, switch_handle_t stg_handle,</div>
+<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;                                       switch_handle_t intf_handle);</div>
+<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;</div>
+<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;switch_status_t <a class="code" href="group__stp.html#ga1b365b23218a21b1b0a6197b4297c890">switch_api_stp_group_print_all</a>(<span class="keywordtype">void</span>);</div>
+<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;</div>
+<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;<span class="comment">// end of stp</span></div>
+<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;<span class="preprocessor">#ifdef __cplusplus</span></div>
+<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;<span class="preprocessor"></span>}</div>
+<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;<span class="preprocessor">#endif</span></div>
 <div class="ttc" id="group__stp_html_ga2b0807c5d9821262ccdc024cf14c41b7"><div class="ttname"><a href="group__stp.html#ga2b0807c5d9821262ccdc024cf14c41b7">switch_stp_state_t</a></div><div class="ttdeci">switch_stp_state_t</div><div class="ttdef"><b>Definition:</b> switch_stp.h:42</div></div>
 <div class="ttc" id="group__stp_html_ga9efec07b6deaca85462895325e2db497"><div class="ttname"><a href="group__stp.html#ga9efec07b6deaca85462895325e2db497">switch_api_stp_port_state_set</a></div><div class="ttdeci">switch_status_t switch_api_stp_port_state_set(switch_device_t device, switch_handle_t stg_handle, switch_handle_t intf_handle, switch_stp_state_t state)</div></div>
 <div class="ttc" id="group__stp_html_ga421d4f754b261d695853243590f5853c"><div class="ttname"><a href="group__stp.html#ga421d4f754b261d695853243590f5853c">switch_api_stp_port_state_get</a></div><div class="ttdeci">switch_status_t switch_api_stp_port_state_get(switch_device_t device, switch_handle_t stg_handle, switch_handle_t intf_handle, switch_stp_state_t *state)</div></div>
@@ -180,7 +181,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Jul 14 2015 15:44:35 for switchapi by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Aug 5 2015 17:04:29 for switchapi by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>

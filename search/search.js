@@ -14,7 +14,7 @@ var indexSectionsWithContent =
   4: "ls",
   5: "s",
   6: "s",
-  7: "ahilmprstv"
+  7: "ailmprstv"
 };
 
 var indexSectionNames =

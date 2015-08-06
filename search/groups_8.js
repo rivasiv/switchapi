@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['tunnel_20api',['Tunnel API',['../group__Tunnel.html',1,'']]]
+  ['vlan_20configuration_20api',['VLAN configuration API',['../group__VLAN.html',1,'']]],
+  ['vrf_20api',['VRF API',['../group__VRF.html',1,'']]]
 ];

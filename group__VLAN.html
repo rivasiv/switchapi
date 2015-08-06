@@ -133,6 +133,12 @@ Functions</h2></td></tr>
 <tr class="separator:ga32f424c9f8364e467fb83c9ecb4202c7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gaa3fc3ae590e6754c648c7bc1798e1593"><td class="memItemLeft" align="right" valign="top">switch_status_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__VLAN.html#gaa3fc3ae590e6754c648c7bc1798e1593">switch_api_vlan_print_all</a> (void)</td></tr>
 <tr class="separator:gaa3fc3ae590e6754c648c7bc1798e1593"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga992f9e459f1f0c8172cba8ba9d12ce34"><td class="memItemLeft" align="right" valign="top">switch_status_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__VLAN.html#ga992f9e459f1f0c8172cba8ba9d12ce34">switch_api_vlan_stats_enable</a> (switch_device_t device, switch_handle_t vlan_handle)</td></tr>
+<tr class="separator:ga992f9e459f1f0c8172cba8ba9d12ce34"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga75ac0a4c22050efd30e42b29e63a69dd"><td class="memItemLeft" align="right" valign="top">switch_status_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__VLAN.html#ga75ac0a4c22050efd30e42b29e63a69dd">switch_api_vlan_stats_disable</a> (switch_device_t device, switch_handle_t vlan_handle)</td></tr>
+<tr class="separator:ga75ac0a4c22050efd30e42b29e63a69dd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gac9d081e2f75ed29b23c33b1c39ef1ded"><td class="memItemLeft" align="right" valign="top">switch_status_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__VLAN.html#gac9d081e2f75ed29b23c33b1c39ef1ded">switch_api_vlan_stats_get</a> (switch_handle_t vlan_handle, uint8_t count, switch_vlan_stat_counter_t *counter_ids, <a class="el" href="structswitch__counter__.html">switch_counter_t</a> *counters)</td></tr>
+<tr class="separator:gac9d081e2f75ed29b23c33b1c39ef1ded"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <p>API functions listed to configure VLAN The basic L2 domain for isolating traffic is configured using configuration of VLANs. The maximum number of VLANs supported on the device is limited to 4k (4096). The operations on VLAN correspond to setting up broadcast domain and optionally ingress and egress VLAN translate tables. </p>
@@ -944,6 +950,122 @@ Functions</h2></td></tr>
 
 </div>
 </div>
+<a class="anchor" id="ga75ac0a4c22050efd30e42b29e63a69dd"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">switch_status_t switch_api_vlan_stats_disable </td>
+          <td>(</td>
+          <td class="paramtype">switch_device_t&#160;</td>
+          <td class="paramname"><em>device</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">switch_handle_t&#160;</td>
+          <td class="paramname"><em>vlan_handle</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Enable vlan statistics </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">device</td><td>device to be programmed </td></tr>
+    <tr><td class="paramname">vlan_handle</td><td>Vlan handle that identifies vlan uniquely </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="ga992f9e459f1f0c8172cba8ba9d12ce34"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">switch_status_t switch_api_vlan_stats_enable </td>
+          <td>(</td>
+          <td class="paramtype">switch_device_t&#160;</td>
+          <td class="paramname"><em>device</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">switch_handle_t&#160;</td>
+          <td class="paramname"><em>vlan_handle</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Enable vlan statistics </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">device</td><td>device to be programmed </td></tr>
+    <tr><td class="paramname">vlan_handle</td><td>Vlan handle that identifies vlan uniquely </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="gac9d081e2f75ed29b23c33b1c39ef1ded"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">switch_status_t switch_api_vlan_stats_get </td>
+          <td>(</td>
+          <td class="paramtype">switch_handle_t&#160;</td>
+          <td class="paramname"><em>vlan_handle</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint8_t&#160;</td>
+          <td class="paramname"><em>count</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">switch_vlan_stat_counter_t *&#160;</td>
+          <td class="paramname"><em>counter_ids</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structswitch__counter__.html">switch_counter_t</a> *&#160;</td>
+          <td class="paramname"><em>counters</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Enable vlan statistics </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">vlan_handle</td><td>Vlan handle that identifies vlan uniquely </td></tr>
+    <tr><td class="paramname">count</td><td>number of counter ids </td></tr>
+    <tr><td class="paramname">counter_ids</td><td>list of counter ids </td></tr>
+    <tr><td class="paramname">counters</td><td>counter values to be returned </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a class="anchor" id="gad46e7aa1d8039d5be568c9cd1aeae470"></a>
 <div class="memitem">
 <div class="memproto">
@@ -1015,7 +1137,7 @@ Functions</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Jul 14 2015 15:44:35 for switchapi by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Aug 5 2015 17:04:29 for switchapi by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>

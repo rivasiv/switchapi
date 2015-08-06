@@ -6,6 +6,8 @@ var searchData=
   ['neigh_5ftype',['neigh_type',['../structswitch__api__neighbor__.html#ac1cd5da4f2c644594c5db4a9530a84f3',1,'switch_api_neighbor_']]],
   ['new_5ftag',['new_tag',['../structswitch__mpls__swap__.html#a4892cbcef883896fd314ee1b95b81015',1,'switch_mpls_swap_::new_tag()'],['../structswitch__mpls__swap__push__.html#a6c94bdf42227f25826f2ddc844692401',1,'switch_mpls_swap_push_::new_tag()']]],
   ['nhop_5fhandle',['nhop_handle',['../structswitch__api__neighbor__.html#a470687d90437a9dbdbf9c216ecf1ecee',1,'switch_api_neighbor_::nhop_handle()'],['../structswitch__mpls__encap__.html#a7420c3bbd462c6d799bf95d522fbfe34',1,'switch_mpls_encap_::nhop_handle()']]],
+  ['num_5fbytes',['num_bytes',['../structswitch__counter__.html#aac5f2101e2a33d4ccd4d57db5546617a',1,'switch_counter_']]],
   ['num_5fin_5fuse',['num_in_use',['../structswitch__handle__info__t.html#a2261dbe42bb71d073ef9ca35d1abb4cc',1,'switch_handle_info_t']]],
+  ['num_5fpackets',['num_packets',['../structswitch__counter__.html#a3612f02c892de3a8c540928cdbddb00f',1,'switch_counter_']]],
   ['nvgre_5finfo',['nvgre_info',['../structswitch__encap__info__.html#a87196fc1af2a20c4de6f020738b5b0c4',1,'switch_encap_info_']]]
 ];

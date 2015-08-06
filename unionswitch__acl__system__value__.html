@@ -129,12 +129,16 @@ Public Attributes</h2></td></tr>
 <tr class="separator:a286860cc03653d754b4f0241f6971554"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a758e364b7718ab08d1e821a53a16af36"><td class="memItemLeft" align="right" valign="top">unsigned&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="unionswitch__acl__system__value__.html#a758e364b7718ab08d1e821a53a16af36">ipv4_enabled</a>:1</td></tr>
 <tr class="separator:a758e364b7718ab08d1e821a53a16af36"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8c4e8476703c56658d6ef54753ff663b"><td class="memItemLeft" align="right" valign="top">unsigned&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="unionswitch__acl__system__value__.html#a8c4e8476703c56658d6ef54753ff663b">rmac_hit</a>:1</td></tr>
+<tr class="separator:a8c4e8476703c56658d6ef54753ff663b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0f7d16f149a8cef677d399b642c1b0b6"><td class="memItemLeft" align="right" valign="top">unsigned char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="unionswitch__acl__system__value__.html#a0f7d16f149a8cef677d399b642c1b0b6">ttl</a></td></tr>
 <tr class="separator:a0f7d16f149a8cef677d399b642c1b0b6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2f3038800c071482adfb19cc706e9b91"><td class="memItemLeft" align="right" valign="top">unsigned short&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="unionswitch__acl__system__value__.html#a2f3038800c071482adfb19cc706e9b91">out_port</a></td></tr>
 <tr class="separator:a2f3038800c071482adfb19cc706e9b91"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab1150c9b21d759f7aa7e7fa1b6527fb4"><td class="memItemLeft" align="right" valign="top">unsigned char&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="unionswitch__acl__system__value__.html#ab1150c9b21d759f7aa7e7fa1b6527fb4">stp_state</a></td></tr>
 <tr class="separator:ab1150c9b21d759f7aa7e7fa1b6527fb4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a175570d7e95c530492e4e9c892e4962f"><td class="memItemLeft" align="right" valign="top">unsigned short&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="unionswitch__acl__system__value__.html#a175570d7e95c530492e4e9c892e4962f">egr_port</a></td></tr>
+<tr class="separator:a175570d7e95c530492e4e9c892e4962f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Acl system field list </p>
@@ -188,6 +192,19 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <p>destination mac </p>
+
+</div>
+</div>
+<a class="anchor" id="a175570d7e95c530492e4e9c892e4962f"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">unsigned short switch_acl_system_value_::egr_port</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>egress port </p>
 
 </div>
 </div>
@@ -321,6 +338,19 @@ Public Attributes</h2></td></tr>
 
 </div>
 </div>
+<a class="anchor" id="a8c4e8476703c56658d6ef54753ff663b"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">unsigned switch_acl_system_value_::rmac_hit</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>rmac hit </p>
+
+</div>
+</div>
 <a class="anchor" id="ad9d0a5d44108dabd8a453a20d244dbc3"></a>
 <div class="memitem">
 <div class="memproto">
@@ -418,7 +448,7 @@ Public Attributes</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Jul 14 2015 15:44:35 for switchapi by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Aug 5 2015 17:04:29 for switchapi by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>

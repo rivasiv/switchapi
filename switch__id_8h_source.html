@@ -118,25 +118,25 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00030"></a><span class="lineno"><a class="line" href="structswitch__api__id__allocator__.html#ac276d3355757993b9b9d97d01fe3942b">   30</a></span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="structswitch__api__id__allocator__.html#ac276d3355757993b9b9d97d01fe3942b">zero_based</a>;             </div>
 <div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;} <a class="code" href="structswitch__api__id__allocator__.html">switch_api_id_allocator</a>;</div>
 <div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    </div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<a class="code" href="structswitch__api__id__allocator__.html">switch_api_id_allocator</a> *switch_api_id_allocator_new(<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> initial_size);</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    </div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;<span class="keywordtype">void</span> switch_api_id_allocator_destroy(<a class="code" href="structswitch__api__id__allocator__.html">switch_api_id_allocator</a> *allocator);</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    </div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> switch_api_id_allocator_allocate (<a class="code" href="structswitch__api__id__allocator__.html">switch_api_id_allocator</a> *allocator);</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> switch_api_id_allocator_allocate_contiguous (<a class="code" href="structswitch__api__id__allocator__.html">switch_api_id_allocator</a> *allocator, uint8_t count);</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    </div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;<span class="keywordtype">void</span> switch_api_id_allocator_release (<a class="code" href="structswitch__api__id__allocator__.html">switch_api_id_allocator</a> *allocator, <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> <span class="keywordtype">id</span>);</div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    </div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;<span class="keywordtype">void</span> switch_api_id_allocator_set (<a class="code" href="structswitch__api__id__allocator__.html">switch_api_id_allocator</a> *allocator, <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> <span class="keywordtype">id</span>);</div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;</div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;<span class="keywordtype">int</span> switch_api_id_allocator_is_set (<a class="code" href="structswitch__api__id__allocator__.html">switch_api_id_allocator</a> *allocator, <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> <span class="keywordtype">id</span>);</div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;</div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;<span class="preprocessor">#ifdef __cplusplus</span></div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;<span class="preprocessor"></span>}</div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;<a class="code" href="structswitch__api__id__allocator__.html">switch_api_id_allocator</a> *switch_api_id_allocator_new(<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> initial_size, <span class="keywordtype">bool</span> zero_based);</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    </div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;<span class="keywordtype">void</span> switch_api_id_allocator_destroy(<a class="code" href="structswitch__api__id__allocator__.html">switch_api_id_allocator</a> *allocator);</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    </div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> switch_api_id_allocator_allocate (<a class="code" href="structswitch__api__id__allocator__.html">switch_api_id_allocator</a> *allocator);</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> switch_api_id_allocator_allocate_contiguous (<a class="code" href="structswitch__api__id__allocator__.html">switch_api_id_allocator</a> *allocator, uint8_t count);</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    </div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;<span class="keywordtype">void</span> switch_api_id_allocator_release (<a class="code" href="structswitch__api__id__allocator__.html">switch_api_id_allocator</a> *allocator, <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> <span class="keywordtype">id</span>);</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    </div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;<span class="keywordtype">void</span> switch_api_id_allocator_set (<a class="code" href="structswitch__api__id__allocator__.html">switch_api_id_allocator</a> *allocator, <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> <span class="keywordtype">id</span>);</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;<span class="keywordtype">int</span> switch_api_id_allocator_is_set (<a class="code" href="structswitch__api__id__allocator__.html">switch_api_id_allocator</a> *allocator, <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> <span class="keywordtype">id</span>);</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;<span class="preprocessor">#ifdef __cplusplus</span></div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;<span class="preprocessor"></span>}</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;<span class="preprocessor"></span></div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;<span class="preprocessor">#endif</span></div>
 <div class="ttc" id="structswitch__api__id__allocator___html_afb6ab7d4488475139381cc38eec12322"><div class="ttname"><a href="structswitch__api__id__allocator__.html#afb6ab7d4488475139381cc38eec12322">switch_api_id_allocator_::data</a></div><div class="ttdeci">uint32_t * data</div><div class="ttdef"><b>Definition:</b> switch_id.h:29</div></div>
 <div class="ttc" id="structswitch__api__id__allocator___html_a03cd2db3a1a233b0515e023f9056484f"><div class="ttname"><a href="structswitch__api__id__allocator__.html#a03cd2db3a1a233b0515e023f9056484f">switch_api_id_allocator_::n_words</a></div><div class="ttdeci">uint32_t n_words</div><div class="ttdef"><b>Definition:</b> switch_id.h:28</div></div>
 <div class="ttc" id="structswitch__api__id__allocator___html_ac276d3355757993b9b9d97d01fe3942b"><div class="ttname"><a href="structswitch__api__id__allocator__.html#ac276d3355757993b9b9d97d01fe3942b">switch_api_id_allocator_::zero_based</a></div><div class="ttdeci">bool zero_based</div><div class="ttdef"><b>Definition:</b> switch_id.h:30</div></div>
@@ -144,7 +144,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Jul 14 2015 15:44:35 for switchapi by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Aug 5 2015 17:04:29 for switchapi by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>

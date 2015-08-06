@@ -3,6 +3,7 @@ var searchData=
   ['data',['data',['../structswitch__api__id__allocator__.html#afb6ab7d4488475139381cc38eec12322',1,'switch_api_id_allocator_']]],
   ['default_5fvlan',['default_vlan',['../structswitch__api__capability__.html#a70bdd050c98705e323b679e24b9a47c6',1,'switch_api_capability_']]],
   ['default_5fvrf',['default_vrf',['../structswitch__api__capability__.html#ac2d627b27b504d9f5ce6970bc393acc2',1,'switch_api_capability_']]],
+  ['deflection_5fflag',['deflection_flag',['../unionswitch__acl__egr__port__value__.html#a94460ee339f8fbfe7d526320e522efe5',1,'switch_acl_egr_port_value_']]],
   ['dest_5fmac',['dest_mac',['../unionswitch__acl__ipv6__value__.html#af9cab18976e82425e05c6fa03cd0a294',1,'switch_acl_ipv6_value_::dest_mac()'],['../unionswitch__acl__mac__value__.html#a30ea531c82dac3dedf0765d8be164a51',1,'switch_acl_mac_value_::dest_mac()'],['../unionswitch__acl__mirror__value__.html#a126ee1013fe8b04f925e116dc7fe7eaf',1,'switch_acl_mirror_value_::dest_mac()'],['../unionswitch__acl__system__value__.html#ab06089019d3617986a0a1973526cac2d',1,'switch_acl_system_value_::dest_mac()']]],
   ['drop_5freason',['drop_reason',['../unionswitch__acl__action__params__.html#a448b9af5019ab2704f22e45026215463',1,'switch_acl_action_params_']]],
   ['drop_5fthreshold',['drop_threshold',['../structswitch__pfc__config__.html#ab03a6b18a9bfb7ea8a73f03cc0f0ccae',1,'switch_pfc_config_']]],
