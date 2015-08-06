@@ -16,6 +16,8 @@ var searchData=
   ['switch_5fecmp_5fhash_5ffields_5f',['switch_ecmp_hash_fields_',['../group__SWITCH.html#gab470d3232936d8970793e600d09b986e',1,'switch_capability.h']]],
   ['switch_5fencap_5fmode_5f',['switch_encap_mode_',['../group__Tunnel.html#ga4fa813d8d08a71d056f234e21db554c1',1,'switch_tunnel.h']]],
   ['switch_5fencap_5ftype_5f',['switch_encap_type_',['../group__Protocol.html#gab53fbd1b03fc2ac89189a744c2ae547a',1,'switch_protocol.h']]],
+  ['switch_5fhostif_5fchannel_5f',['switch_hostif_channel_',['../group__Host-Interface.html#gaa2ce15e2b287af8f1da755470b496c72',1,'switch_hostif.h']]],
+  ['switch_5fhostif_5freason_5fcode_5f',['switch_hostif_reason_code_',['../group__Host-Interface.html#ga47bce1613be0ef92681ecaff80e2d130',1,'switch_hostif.h']]],
   ['switch_5finterface_5ftype_5f',['switch_interface_type_',['../group__Interface.html#ga9e00b047eced7826be65f13a5d787b4d',1,'switch_interface.h']]],
   ['switch_5fintf_5fattr_5f',['switch_intf_attr_',['../group__Interface.html#ga843cb0fb61cb85d480ee5c4262cfba7b',1,'switch_interface.h']]],
   ['switch_5flag_5ftype_5f',['switch_lag_type_',['../group__LAG.html#ga27f33bc168b263c99fcece54e4f3c222',1,'switch_lag.h']]],
