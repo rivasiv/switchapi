@@ -409,7 +409,7 @@ typedef union switch_acl_system_value_ {
     unsigned char ttl;                                /**< time to live */
     unsigned short out_ifindex;                       /**< egress ifindex */
     unsigned char stp_state;                          /**< spanning tree port state */
-    unsigned short egr_port;
+    unsigned short egr_port;                          /**< egress port */
 } switch_acl_system_value;
 
 /** Acl system mask */
@@ -439,10 +439,10 @@ typedef union switch_acl_action_params_ {
     } redirect;                                       /**< port redirect struct */
     struct {
         uint16_t reason_code;                         /**< cpu reason code */
-    } cpu_redirect;
+    } cpu_redirect;                                   /**< cpu redirect struct */
     struct {
         uint8_t reason_code;                          /**< drop reason code */
-    } drop;
+    } drop;                                           /**< drop struct */
 } switch_acl_action_params_t;
 
 /** Egress port ACL */
@@ -455,9 +455,9 @@ typedef enum switch_acl_egr_field_ {
 
 /** Egress port value */
 typedef union switch_acl_egr_value_ {
-    switch_handle_t  egr_port;
-    bool             deflection_flag;
-    unsigned short   l3_mtu_check;
+    switch_handle_t  egr_port;                        /**< egress port */
+    bool             deflection_flag;                 /**< deflection flag */
+    unsigned short   l3_mtu_check;                    /**< l3 mtu check */
 } switch_acl_egr_value_t;
 
 /** Egress acl port mask */

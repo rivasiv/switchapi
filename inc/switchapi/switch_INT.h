@@ -23,12 +23,27 @@ limitations under the License.
 extern "C" {
 #endif /* __cplusplus */
     
+/** @defgroup INT Inband Network Telemetry (INT) APIs
+ *  API functions to configure INT functionality
+ *  @{
+ */ // begin of INT API
+
+/** Valid INT instruction bits in INT header */
 #define INT_INS_MASK_VALID_BITS     0xFF00
 
+/**
+ INT Transit function enable/disable
+ @param device device
+ @param switch_id INT switch_id of this device. Used when inserting INT information.
+ @param enable 0 = disable, 1 = enable INT transit functionality
+*/
 switch_status_t
 switch_int_transit_enable(switch_device_t device, int32_t switch_id, int32_t enable);
+
+/** @} */ // end of INT APIs
 
 #ifdef __cplusplus
 }
 #endif /* __cplusplus */
-#endif // _SWITCH_INT_H_
+
+#endif /* _SWITCH_INT_H_ */
