@@ -128,11 +128,14 @@ Enumerations</h2></td></tr>
 <b>SWITCH_EGRESS_TUNNEL_TYPE_IPV4_ERSPAN_T3</b> = 7, 
 <br/>
 &#160;&#160;<b>SWITCH_EGRESS_TUNNEL_TYPE_IPV6_ERSPAN_T3</b> = 8, 
+<b>SWITCH_EGRESS_TUNNEL_TYPE_IPV4_GRE</b> = 9, 
+<b>SWITCH_EGRESS_TUNNEL_TYPE_IPV6_GRE</b> = 10, 
 <b>SWITCH_EGRESS_TUNNEL_TYPE_MPLS_L2VPN</b> = 13, 
-<b>SWITCH_EGRESS_TUNNEL_TYPE_MPLS_L3VPN</b> = 14, 
-<b>SWITCH_EGRESS_TUNNEL_TYPE_FABRIC</b> = 15, 
 <br/>
-&#160;&#160;<b>SWITCH_EGRESS_TUNNEL_TYPE_CPU</b> = 16
+&#160;&#160;<b>SWITCH_EGRESS_TUNNEL_TYPE_MPLS_L3VPN</b> = 14, 
+<b>SWITCH_EGRESS_TUNNEL_TYPE_FABRIC</b> = 15, 
+<b>SWITCH_EGRESS_TUNNEL_TYPE_CPU</b> = 16, 
+<b>SWITCH_EGRESS_TUNNEL_TYPE_IPV4_VXLAN_GPE</b> = 17
 <br/>
  }</td></tr>
 <tr class="separator:gad3935c033190e13a5ac4bf8b4bf3c8e7"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -140,16 +143,19 @@ Enumerations</h2></td></tr>
 &#160;&#160;<b>SWITCH_INGRESS_TUNNEL_TYPE_NONE</b> = 0, 
 <b>SWITCH_INGRESS_TUNNEL_TYPE_VXLAN</b> = 1, 
 <b>SWITCH_INGRESS_TUNNEL_TYPE_GRE</b> = 2, 
-<b>SWITCH_INGRESS_TUNNEL_TYPE_GENEVE</b> = 3, 
+<b>SWITCH_INGRESS_TUNNEL_TYPE_IP_IN_IP</b> = 3, 
 <br/>
-&#160;&#160;<b>SWITCH_INGRESS_TUNNEL_TYPE_NVGRE</b> = 4, 
-<b>SWITCH_INGRESS_TUNNEL_TYPE_MPLS_L2VPN_NUM_LABELS_1</b> = 5, 
-<b>SWITCH_INGRESS_TUNNEL_TYPE_MPLS_L2VPN_NUM_LABELS_2</b> = 6, 
-<b>SWITCH_INGRESS_TUNNEL_TYPE_MPLS_L2VPN_NUM_LABELS_3</b> = 7, 
+&#160;&#160;<b>SWITCH_INGRESS_TUNNEL_TYPE_GENEVE</b> = 4, 
+<b>SWITCH_INGRESS_TUNNEL_TYPE_NVGRE</b> = 5, 
+<b>SWITCH_INGRESS_TUNNEL_TYPE_MPLS_L2VPN_NUM_LABELS_1</b> = 6, 
+<b>SWITCH_INGRESS_TUNNEL_TYPE_MPLS_L2VPN_NUM_LABELS_2</b> = 7, 
 <br/>
-&#160;&#160;<b>SWITCH_INGRESS_TUNNEL_TYPE_MPLS_L3VPN_NUM_LABELS_1</b> = 8, 
-<b>SWITCH_INGRESS_TUNNEL_TYPE_MPLS_L3VPN_NUM_LABELS_2</b> = 9, 
-<b>SWITCH_INGRESS_TUNNEL_TYPE_MPLS_L3VPN_NUM_LABELS_3</b> = 10
+&#160;&#160;<b>SWITCH_INGRESS_TUNNEL_TYPE_MPLS_L2VPN_NUM_LABELS_3</b> = 8, 
+<b>SWITCH_INGRESS_TUNNEL_TYPE_MPLS_L3VPN_NUM_LABELS_1</b> = 9, 
+<b>SWITCH_INGRESS_TUNNEL_TYPE_MPLS_L3VPN_NUM_LABELS_2</b> = 10, 
+<b>SWITCH_INGRESS_TUNNEL_TYPE_MPLS_L3VPN_NUM_LABELS_3</b> = 11, 
+<br/>
+&#160;&#160;<b>SWITCH_INGRESS_TUNNEL_TYPE_VXLAN_GPE</b> = 12
 <br/>
  }</td></tr>
 <tr class="separator:ga93c321f8669edd1f7c4d817eabf8f63e"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -520,7 +526,7 @@ Functions</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Aug 5 2015 17:46:38 for switchapi by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Dec 1 2015 16:33:42 for switchapi by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>

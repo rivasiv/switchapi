@@ -94,11 +94,10 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
 <tr class="memitem:a4deb87a5782a1a57a0f3994f663bae7e"><td class="memItemLeft" >struct {</td></tr>
-<tr class="memitem:ad75808ae2ff5bfcce070fba106ef333d"><td class="memItemLeft" ><a class="anchor" id="afef4394bc75846cc8fbe410833934bbc"></a>
-&#160;&#160;&#160;unsigned int&#160;&#160;&#160;<b>clone_spec</b></td></tr>
-<tr class="separator:ad75808ae2ff5bfcce070fba106ef333d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8e82f019407c05d53a9034983e6a05c7"><td class="memItemLeft" >&#160;&#160;&#160;unsigned int&#160;&#160;&#160;<a class="el" href="unionswitch__acl__action__params__.html#a448b9af5019ab2704f22e45026215463">drop_reason</a></td></tr>
-<tr class="separator:a8e82f019407c05d53a9034983e6a05c7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5b139b833cecca5ed06ac17a4797feb3"><td class="memItemLeft" >&#160;&#160;&#160;switch_handle_t&#160;&#160;&#160;<a class="el" href="unionswitch__acl__action__params__.html#ae9020e4766ce42e897aa954addaf3e86">mirror_handle</a></td></tr>
+<tr class="separator:a5b139b833cecca5ed06ac17a4797feb3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a64edf24cbf73bfd2f3db6ba39935c1a8"><td class="memItemLeft" >&#160;&#160;&#160;unsigned int&#160;&#160;&#160;<a class="el" href="unionswitch__acl__action__params__.html#aa38cba4a43056e6cf9e6b1a9067eb62a">switch_id</a></td></tr>
+<tr class="separator:a64edf24cbf73bfd2f3db6ba39935c1a8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4deb87a5782a1a57a0f3994f663bae7e"><td class="memItemLeft" valign="top">}&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="unionswitch__acl__action__params__.html#a4deb87a5782a1a57a0f3994f663bae7e">mirror</a></td></tr>
 <tr class="separator:a4deb87a5782a1a57a0f3994f663bae7e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a74a40ddadf6358d559ada9b966af1793"><td class="memItemLeft" >struct {</td></tr>
@@ -111,6 +110,11 @@ Public Attributes</h2></td></tr>
 <tr class="separator:a6f0b9aef5361cc09dff2ab52466454de"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa94b1b29e656f80789b0725c382cedd1"><td class="memItemLeft" valign="top">}&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="unionswitch__acl__action__params__.html#aa94b1b29e656f80789b0725c382cedd1">cpu_redirect</a></td></tr>
 <tr class="separator:aa94b1b29e656f80789b0725c382cedd1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a54b08f2107a75a142e135c4f7a109e09"><td class="memItemLeft" >struct {</td></tr>
+<tr class="memitem:a15eded583f9c8662ba4327860fff5028"><td class="memItemLeft" >&#160;&#160;&#160;uint8_t&#160;&#160;&#160;<a class="el" href="unionswitch__acl__action__params__.html#a1269fcd1fc7d6d7cf761499bd62954ff">reason_code</a></td></tr>
+<tr class="separator:a15eded583f9c8662ba4327860fff5028"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a54b08f2107a75a142e135c4f7a109e09"><td class="memItemLeft" valign="top">}&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="unionswitch__acl__action__params__.html#a54b08f2107a75a142e135c4f7a109e09">drop</a></td></tr>
+<tr class="separator:a54b08f2107a75a142e135c4f7a109e09"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Acl action parameters </p>
@@ -128,16 +132,16 @@ Public Attributes</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a448b9af5019ab2704f22e45026215463"></a>
+<a class="anchor" id="a54b08f2107a75a142e135c4f7a109e09"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">unsigned int switch_acl_action_params_::drop_reason</td>
+          <td class="memname">struct { ... }   switch_acl_action_params_::drop</td>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>mirror acl actions parameters </p>
+<p>drop struct </p>
 
 </div>
 </div>
@@ -167,6 +171,19 @@ Public Attributes</h2></td></tr>
 
 </div>
 </div>
+<a class="anchor" id="ae9020e4766ce42e897aa954addaf3e86"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">switch_handle_t switch_acl_action_params_::mirror_handle</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>mirror session handle </p>
+
+</div>
+</div>
 <a class="anchor" id="a9746d0286a4eb88231f052f4cd82e6d7"></a>
 <div class="memitem">
 <div class="memproto">
@@ -177,6 +194,19 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <p>cpu reason code </p>
+
+</div>
+</div>
+<a class="anchor" id="a1269fcd1fc7d6d7cf761499bd62954ff"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint8_t switch_acl_action_params_::reason_code</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>drop reason code </p>
 
 </div>
 </div>
@@ -193,13 +223,26 @@ Public Attributes</h2></td></tr>
 
 </div>
 </div>
+<a class="anchor" id="aa38cba4a43056e6cf9e6b1a9067eb62a"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">unsigned int switch_acl_action_params_::switch_id</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>mirror switch id </p>
+
+</div>
+</div>
 <hr/>The documentation for this union was generated from the following file:<ul>
 <li><a class="el" href="switch__acl_8h_source.html">switch_acl.h</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Aug 5 2015 17:46:38 for switchapi by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Dec 1 2015 16:33:43 for switchapi by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.6
 </small></address>

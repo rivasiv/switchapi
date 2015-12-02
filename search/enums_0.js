@@ -1,8 +1,8 @@
 var searchData=
 [
   ['switch_5facl_5faction_5f',['switch_acl_action_',['../group__ACL.html#ga55dd1b7b278fc8fe549b0025fd93837c',1,'switch_acl.h']]],
-  ['switch_5facl_5fegr_5fport_5faction_5f',['switch_acl_egr_port_action_',['../group__ACL.html#ga07f01ccf5fb9d52a7435a6eed2f4348d',1,'switch_acl.h']]],
-  ['switch_5facl_5fegr_5fport_5ffield_5f',['switch_acl_egr_port_field_',['../group__ACL.html#ga265458b936a958e15fd66e0be089adfc',1,'switch_acl.h']]],
+  ['switch_5facl_5fegr_5faction_5f',['switch_acl_egr_action_',['../group__ACL.html#ga09994d0dc9b20d6987b00f4fb4d24480',1,'switch_acl.h']]],
+  ['switch_5facl_5fegr_5ffield_5f',['switch_acl_egr_field_',['../group__ACL.html#ga3b791517b69e7fa68f01e6922c7b7daf',1,'switch_acl.h']]],
   ['switch_5facl_5fip_5ffield_5f',['switch_acl_ip_field_',['../group__ACL.html#gace4560f87e18ccd1d8f9119fe7900fa1',1,'switch_acl.h']]],
   ['switch_5facl_5fip_5fracl_5ffield_5f',['switch_acl_ip_racl_field_',['../group__ACL.html#gaf0f1f49088b56fbe530ae19b8db6b4fb',1,'switch_acl.h']]],
   ['switch_5facl_5fipv6_5ffield_5f',['switch_acl_ipv6_field_',['../group__ACL.html#ga129df7ad73db6209bc9a5f28696408db',1,'switch_acl.h']]],
@@ -25,6 +25,7 @@ var searchData=
   ['switch_5fmac_5fattr_5f',['switch_mac_attr_',['../group__Switching.html#ga0c6ab903bbf0c14c6c30530c04039c56',1,'switch_l2.h']]],
   ['switch_5fmac_5fentry_5ftype_5f',['switch_mac_entry_type_',['../group__Switching.html#gad77a07d26d1f4e5a80955c141b79443a',1,'switch_l2.h']]],
   ['switch_5fmac_5fevent_5f',['switch_mac_event_',['../group__Switching.html#ga996cc47a880ed2c3878a3da3f0b6e987',1,'switch_l2.h']]],
+  ['switch_5fmirror_5fsession_5ftype_5ft',['switch_mirror_session_type_t',['../group__Mirror.html#ga5a8fd0899bf538277ebb3cb38c13efe1',1,'switch_mirror.h']]],
   ['switch_5fmirror_5ftype_5ft',['switch_mirror_type_t',['../group__Mirror.html#ga083735eb1cc7380050bd9d88edaadbf4',1,'switch_mirror.h']]],
   ['switch_5fmpls_5faction_5f',['switch_mpls_action_',['../group__Protocol.html#ga1a02019ad82b014e9be9939fe6f5a158',1,'switch_protocol.h']]],
   ['switch_5fmpls_5fmode_5f',['switch_mpls_mode_',['../group__Protocol.html#ga2a12b298f4eb1f753d9a16b373fa7707',1,'switch_protocol.h']]],
@@ -33,7 +34,6 @@ var searchData=
   ['switch_5fneighbor_5ftype_5f',['switch_neighbor_type_',['../group__ARP.html#ga2e835193fae158f288a1ee584570237b',1,'switch_neighbor.h']]],
   ['switch_5foper_5fstatus_5f',['switch_oper_status_',['../group__SWITCH.html#ga8b331368df1f8028eaba46342126846e',1,'switch_capability.h']]],
   ['switch_5fport_5fspeed_5ft',['switch_port_speed_t',['../group__Port.html#gaaeb492389413226d6bdf953cbc3732b8',1,'switch_port.h']]],
-  ['switch_5fprotocol_5f',['switch_protocol_',['../group__Protocol.html#gabfdeead357adee88363e577fec4def32',1,'switch_protocol.h']]],
   ['switch_5fstat_5fcounter_5f',['switch_stat_counter_',['../group__SWITCH.html#ga4d7c5a400427448c7780dcb05a2efb74',1,'switch_capability.h']]],
   ['switch_5fstp_5fmode_5f',['switch_stp_mode_',['../group__stp.html#ga8f4ad089a2dadfd52729fb2023e53498',1,'switch_stp.h']]],
   ['switch_5fstp_5fstate_5ft',['switch_stp_state_t',['../group__stp.html#ga2b0807c5d9821262ccdc024cf14c41b7',1,'switch_stp.h']]],

@@ -1,9 +1,9 @@
 var searchData=
 [
   ['switch_5facl_5faction_5fparams_5f',['switch_acl_action_params_',['../unionswitch__acl__action__params__.html',1,'']]],
-  ['switch_5facl_5fegr_5fport_5fkey_5fvalue_5fpair_5f',['switch_acl_egr_port_key_value_pair_',['../structswitch__acl__egr__port__key__value__pair__.html',1,'']]],
-  ['switch_5facl_5fegr_5fport_5fmask_5f',['switch_acl_egr_port_mask_',['../unionswitch__acl__egr__port__mask__.html',1,'']]],
-  ['switch_5facl_5fegr_5fport_5fvalue_5f',['switch_acl_egr_port_value_',['../unionswitch__acl__egr__port__value__.html',1,'']]],
+  ['switch_5facl_5fegr_5fkey_5fvalue_5fpair_5f',['switch_acl_egr_key_value_pair_',['../structswitch__acl__egr__key__value__pair__.html',1,'']]],
+  ['switch_5facl_5fegr_5fmask_5f',['switch_acl_egr_mask_',['../unionswitch__acl__egr__mask__.html',1,'']]],
+  ['switch_5facl_5fegr_5fvalue_5f',['switch_acl_egr_value_',['../unionswitch__acl__egr__value__.html',1,'']]],
   ['switch_5facl_5finfo_5f',['switch_acl_info_',['../structswitch__acl__info__.html',1,'']]],
   ['switch_5facl_5fip_5fkey_5fvalue_5fpair_5f',['switch_acl_ip_key_value_pair_',['../structswitch__acl__ip__key__value__pair__.html',1,'']]],
   ['switch_5facl_5fip_5fmask_5f',['switch_acl_ip_mask_',['../unionswitch__acl__ip__mask__.html',1,'']]],
@@ -34,6 +34,7 @@ var searchData=
   ['switch_5fapi_5fid_5fallocator_5f',['switch_api_id_allocator_',['../structswitch__api__id__allocator__.html',1,'']]],
   ['switch_5fapi_5finterface_5finfo_5f',['switch_api_interface_info_',['../structswitch__api__interface__info__.html',1,'']]],
   ['switch_5fapi_5fmac_5fentry_5f',['switch_api_mac_entry_',['../structswitch__api__mac__entry__.html',1,'']]],
+  ['switch_5fapi_5fmirror_5finfo_5f',['switch_api_mirror_info_',['../structswitch__api__mirror__info__.html',1,'']]],
   ['switch_5fapi_5fneighbor_5f',['switch_api_neighbor_',['../structswitch__api__neighbor__.html',1,'']]],
   ['switch_5fapi_5fport_5finfo_5f',['switch_api_port_info_',['../structswitch__api__port__info__.html',1,'']]],
   ['switch_5fcounter_5f',['switch_counter_',['../structswitch__counter__.html',1,'']]],
